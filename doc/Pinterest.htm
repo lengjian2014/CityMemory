@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html lang="en" class="ie7 ielt9 ielt10 en"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie8 ielt9 ielt10 en"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie9 ielt10 en"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html style="" class=" en columns-5" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+
+            <link rel="stylesheet" href="css/bundle.css">
+        
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/gpdjojdkbbmdfjfahjcgigfpmkopogic">
+
+    
+    <script>
+                            window.isMainPinterestSite = true;
+        
+                var Pc = {
+            e: {"rpcr": false, "nrf": false, "ew": false, "wfe": false, "rpl": false, "fwl": false, "ps": null, "so_amp": false, "sw": false, "fwb": false, "fwc": false, "slm": null, "sn": false, "fww": false, "epfftensp": false},
+            expns: {"10": {"experience_id": 10000, "id": "10:10000"}}
+        };
+        Pc.TEST_MODE = null;
+        
+                    var goog={require:function(a){},provide:function(a){}};var P=window.P={};P.e=window.Pc.e;P.expns=window.Pc.expns;P.DEBUG=window.Pc.DEBUG;P.interfaces={};P.FB_KEY=-1;P.CONTEXT={};P.STRINGS={};P.PAGE_INFO=null;P.ROUTES=[];P.PAGE_ROUTE_PATTERN="";P.PAGE_LOAD_REQUEST_IDENTIFIER="";P.setFacebookKey=function(a){P.FB_KEY=a};P.setContext=function(a){P.CONTEXT=a};P.setStrings=function(a){P.STRINGS=a};P.setPageInfo=function(a){P.PAGE_INFO=a};P.setRoutes=function(a){P.ROUTES=a};P.setPageRoutePattern=function(a){P.PAGE_ROUTE_PATTERN=a};
+P.setPageLoadRequestIdentifier=function(a){P.PAGE_LOAD_REQUEST_IDENTIFIER=a};P.CONST={};P.Overlap={isOverlappingViewport:function(a,b){void 0===b&&(b=0);var c=window.innerWidth||document.documentElement.clientWidth,d=window.innerHeight||document.documentElement.clientHeight;if(!a.getBoundingClientRect)return!0;var e=a.getBoundingClientRect(),g=e.bottom-e.top;return 0<e.right-e.left&&0<g&&e.top<d+b&&e.bottom>-b&&e.left<c+b&&e.right>-b}};var LOADED_CLASS=" loaded",FADE_CLASS=" fade";P.Lazy={onImageLoad:function(a){var b=LOADED_CLASS;P.Overlap.isOverlappingViewport(a)&&(b+=FADE_CLASS);a.className+=b}};var doc=document,head=doc.getElementsByTagName("head")[0],validBase=/^https?:\/\//,list={},ids={},delay={},scriptpath,scripts={},s="string",f=!1,push="push",domContentLoaded="DOMContentLoaded",readyState="readyState",addEventListenerName="addEventListenerName",onreadystatechangeName="onreadystatechangeName";function every(a,b){for(var c=0,d=a.length;c<d;++c)if(!b(a[c]))return f;return 1}function each(a,b){every(a,function(a){return!b(a)})}
+!doc[readyState]&&doc[addEventListenerName]&&(doc[addEventListenerName](domContentLoaded,function fn(){doc.removeEventListener(domContentLoaded,fn,f);doc[readyState]="complete"},f),doc[readyState]="loading");
+function $script(a,b,c){function d(a){return a.call?a():list[a]}function e(){if(!--l){list[m]=1;h&&h();for(var a in delay)every(a.split("|"),d)&&!each(delay[a],d)&&(delay[a]=[])}}a=a[push]?a:[a];var g=b&&"function"==typeof b,h=g?b:c,m=g?a.join(""):b,l=a.length;setTimeout(function(){each(a,function(a){if(null===a)return e();if(scripts[a])return m&&(ids[m]=1),2==scripts[a]&&e();scripts[a]=1;m&&(ids[m]=1);create(!validBase.test(a)&&scriptpath?scriptpath+a+".js":a,e)})},0);return $script}
+function create(a,b){var c=doc.createElement("script"),d=f;c.onload=c.onerror=c[onreadystatechangeName]=function(){c[readyState]&&!/^c|loade/.test(c[readyState])||d||(c.onload=c[onreadystatechangeName]=null,d=1,scripts[a]=2,b())};c.async=1;c.src=a;head.insertBefore(c,head.firstChild)}$script.get=create;$script.order=function(a,b,c){(function e(){var g=a.shift();a.length?$script(g,e):$script(g,b,c)})()};$script.path=function(a){scriptpath=a};
+$script.ready=function(a,b,c){a=a[push]?a:[a];var d=[];!each(a,function(a){list[a]||d[push](a)})&&every(a,function(a){return list[a]})?b():function(a){delay[a]=delay[a]||[];delay[a][push](b);c&&c(d)}(a.join("|"));return $script};$script.done=function(a){$script([null],a)};P.script={};P.script.ready=function(a,b){$script.ready(a,b)};P.script.load=function(a,b,c){P.script.ready(a,function(){0===b.lastIndexOf("//",0)&&(b=window.location.protocol+b);$script(b,c)})};P.script.done=function(a){$script.done(a)};var JS_MODULE_ID_START_ARGS="startArgs",startArgsRef=null;P.start={};P.start.start=function(a){startArgsRef=a;P.script.done(JS_MODULE_ID_START_ARGS)};P.start.ready=function(a){P.script.ready(JS_MODULE_ID_START_ARGS,function(){a(startArgsRef)})};P.start.finishStart=function(){startArgsRef=null};P.BodyColumns={getBodyWidth:function(){return window.innerWidth||document.documentElement.clientWidth},getBodyColumnsNeeded:function(){var a=P.CONST.PIN_WIDTH+P.CONST.PIN_MARGIN;P.e.sn&&(a+=22);var b=P.BodyColumns.getBodyWidth();return Math.min(Math.max(Math.floor(b/a),P.CONST.MIN_COLUMNS),P.CONST.MAX_COLUMNS)},setNumColumns:function(a){var b=document.documentElement;a=a?a:P.BodyColumns.getBodyColumnsNeeded();var c=b.className.replace(/ columns-\d+/,"");b.className=c+(" columns-"+a)},initialize:function(){P.BodyColumns.setNumColumns()}};                    P.CONST.PIN_WIDTH=236;P.CONST.PIN_MARGIN=14;P.CONST.MIN_COLUMNS=3;P.CONST.MAX_COLUMNS=10;P.BodyColumns.initialize();            </script>
+                <script src="js/bundle.js"></script>
+    
+    <link rel="canonical" href="https://www.pinterest.com/settings/">
+
+        <link rel="apple-touch-icon" href="https://s-passets-ec.pinimg.com/webapp/style/app/desktop/images/logo_trans_144x144.4d67817d.png">
+    <link rel="icon" href="https://s-passets-ec.pinimg.com/webapp/style/app/desktop/images/favicon.c37ee67b.png">
+    <!--[if IE]><link rel="shortcut icon" href="https://s-passets-ec.pinimg.com/webapp/style/app/desktop/images/favicon.85f9689a.ico"><![endif]-->
+    <meta name="application-name" content="Pinterest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://s-passets-ec.pinimg.com/webapp/style/app/desktop/images/logo_trans_144x144.4d67817d.png">
+
+    <meta property="fb:app_id" content="274266067164">
+    <meta property="og:site_name" content="Pinterest">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <title>Pinterest</title>
+
+            <meta property="og:url" name="og:url" content="http://www.pinterest.com" data-app="">
+            <meta property="description" name="description" content="Pinterest is where you go to discover new things and collect stuff you love. If you find something online you want to build, cook, buy or do, just Pin It to your board on Pinterest!" data-app="">
+            <meta property="og:type" name="og:type" content="website" data-app="">
+            <meta property="og:description" name="og:description" content="Pinterest is an online pinboard." data-app="">
+            <meta property="og:title" name="og:title" content="Pinterest" data-app="">
+            <meta property="og:image" name="og:image" content="http://passets-ec.pinterest.com/images/about/logos/Logo.png" data-app="">
+    <script src="js/ga.js" async="" type="text/javascript"></script></head><body class=""><div class="App full Module">
+
+    <div class="Header Module"><div class="headerBackground"></div>
+
+
+<div class="headerContainer centeredWithinWrapper ">
+    <div class="leftHeaderContent">
+                                                <div class="categoriesButton DropdownButton Module">
+
+<button type="button" class="rounded Button Module primaryOnHover btn categories">
+
+<em></em>
+<span class="accessibilityText">Categories</span></button></div>
+        
+        <div class="inHeader ui-SearchForm Module">    
+
+
+<form action="/search/" method="GET" name="search">
+    <div class="inHeader search Module ui-TypeaheadField">
+    
+
+
+
+    <input name="q" placeholder="Search" autocomplete="off" class="field" type="text">
+<div class="search hidden ui-Typeahead Module inHeader">
+    
+
+    
+
+<ul class="results"></ul></div></div>
+    <button class="submit" type="submit">Search</button>
+</form></div>
+    </div>
+
+    <div>
+        <a href="https://www.pinterest.com/" id="logo" class="logo" data-force-refresh="1">Pinterest</a>
+
+            </div>
+
+
+    
+    <div class="rightHeaderContent">
+                    <div class="addPinWrapper DropdownButton Module">
+
+<button type="button" class="rounded Button addPinHeader Module primaryOnHover btn">
+
+<em></em>
+<span class="accessibilityText">Add a Pin</span></button></div>
+
+            <div class="NotificationsButton merged Module DropdownButton">
+
+    
+
+
+
+<button type="button" class="rounded Button Module primaryOnHover btn notifs">
+
+<em></em>
+<span class="accessibilityText">Notifications</span><div class="badge"></div></button></div>
+
+            <div class="userMenuWrapper">
+                <div class="UserMenu merged Module">    
+
+
+
+<div class="usernameLink">
+    <span class="profileImage" style="background-image:url(https://s-passets-ec.pinimg.com/images/user/default_30.png)"></span>
+    <span class="profileName">leng</span>
+</div></div>
+            </div>
+            </div>
+</div></div>
+    <button type="button" class="scrollToTop rounded Button ScrollToTop Module btn">
+
+<em></em>
+    &nbsp;</button>
+
+    
+<div class="appContent">
+    <div class="mainContainer">
+                    <div class="Nags Module">
+
+                                                            <!--[if lt IE 8]><div class="NagBase Module centeredWithinWrapper" id="NagBase-16">
+
+    
+    <div class="message">Wups, your browser's a little out of date! <a href="http://windows.microsoft.com/en-US/internet-explorer/download-ie">Update it now</a> or <a href="http://whatbrowser.org/">try another browser</a> for a faster, smoother Pinterest.</div>
+
+    <button type="button" class="Button nagClose Module borderless" id="Button-17">
+
+    &nbsp;</button>
+</div><![endif]-->
+            </div>
+                <div class="Module UserSettingsPage">
+
+
+
+<form class="standardForm" method="post">
+
+    <h1>Account Settings</h1>
+
+    <ul>
+        <li class="sectionTitle">
+          <h2>Basic Info</h2>
+        </li>
+        <li>
+            <h3><label>Email Address</label></h3>
+            <div>
+                <input name="email" value="lgj1029@126.com" type="text">
+            </div>
+        </li>
+        <li>
+            <h3>Password</h3>
+            <div>
+                                    <button type="button" class="ShowModalButton Button Module hasText changePasswordButton borderless">
+
+<span class="buttonText">Change your password...</span>
+        </button>
+                            </div>
+        </li>
+        <li>
+            <h3><label>Profile</label></h3>
+            <div>
+                <button type="button" class="rounded ShowModalButton Button Module hasText btn">
+
+<span class="buttonText">Edit Profile</span>
+        </button>
+                <span class="clearRecentSearchDetails">
+                    Update your name, your picture, where you're from and other info about you.
+                </span>
+            </div>
+        </li>
+
+        <li>
+            <h3><label>Language</label></h3>
+            <div>
+                <select class="ui-Select Module" name="locale">
+
+    
+        <option value="de">
+        Deutsch 
+            </option>
+        <option value="en-GB">
+        English (UK) 
+            </option>
+        <option value="en-US" selected="selected">
+        English (US) 
+            </option>
+        <option value="es-419">
+        Español (América) 
+            </option>
+        <option value="es-ES">
+        Español (España) 
+            </option>
+        <option value="fr">
+        Français 
+            </option>
+        <option value="it">
+        Italiano 
+            </option>
+        <option value="nl">
+        Nederlands 
+            </option>
+        <option value="pt-BR">
+        Português (Brasil) 
+            </option>
+        <option value="pt-PT">
+        Português (Europeu) 
+            </option>
+</select>
+            </div>
+        </li>
+                <li>
+            <h3><label>Country</label></h3>
+            <div>
+                <select class="ui-Select Module" name="country">    
+
+    
+        <option value="">
+        Please select a country 
+            </option>
+        <option value="AF">
+        Afghanistan (افغانستان‎) 
+            </option>
+        <option value="AX">
+        Aland Islands 
+            </option>
+        <option value="AL">
+        Albania (Shqipëria) 
+            </option>
+        <option value="DZ">
+        Algeria (الجزائر‎) 
+            </option>
+        <option value="AS">
+        American Samoa 
+            </option>
+        <option value="AD">
+        Andorra 
+            </option>
+        <option value="AO">
+        Angola 
+            </option>
+        <option value="AI">
+        Anguilla 
+            </option>
+        <option value="AQ">
+        Antarctica 
+            </option>
+        <option value="AG">
+        Antigua and Barbuda 
+            </option>
+        <option value="AR">
+        Argentina 
+            </option>
+        <option value="AM">
+        Armenia (Հայաստան) 
+            </option>
+        <option value="AW">
+        Aruba 
+            </option>
+        <option value="AU">
+        Australia 
+            </option>
+        <option value="AT">
+        Austria (Österreich) 
+            </option>
+        <option value="AZ">
+        Azerbaijan (Azərbaycan) 
+            </option>
+        <option value="BS">
+        Bahamas 
+            </option>
+        <option value="BH">
+        Bahrain (البحرين‎) 
+            </option>
+        <option value="BD">
+        Bangladesh (বাংলাদেশ) 
+            </option>
+        <option value="BB">
+        Barbados 
+            </option>
+        <option value="BY">
+        Belarus (Беларусь) 
+            </option>
+        <option value="BE">
+        Belgium (België) 
+            </option>
+        <option value="BZ">
+        Belize 
+            </option>
+        <option value="BJ">
+        Benin (Bénin) 
+            </option>
+        <option value="BM">
+        Bermuda 
+            </option>
+        <option value="BT">
+        Bhutan (འབྲུག) 
+            </option>
+        <option value="BO">
+        Bolivia,Plurinational State of 
+            </option>
+        <option value="BQ">
+        Bonaire,Sint Eustatius and Saba 
+            </option>
+        <option value="BA">
+        Bosnia and Herzegovina (Босна и Херцеговина) 
+            </option>
+        <option value="BW">
+        Botswana 
+            </option>
+        <option value="BV">
+        Bouvet Island 
+            </option>
+        <option value="BR">
+        Brazil (Brasil) 
+            </option>
+        <option value="IO">
+        British Indian Ocean Territory 
+            </option>
+        <option value="BN">
+        Brunei Darussalam 
+            </option>
+        <option value="BG">
+        Bulgaria (България) 
+            </option>
+        <option value="BF">
+        Burkina Faso 
+            </option>
+        <option value="BI">
+        Burundi (Uburundi) 
+            </option>
+        <option value="KH">
+        Cambodia (កម្ពុជា) 
+            </option>
+        <option value="CM">
+        Cameroon (Cameroun) 
+            </option>
+        <option value="CA">
+        Canada 
+            </option>
+        <option value="CV">
+        Cape Verde (Kabu Verdi) 
+            </option>
+        <option value="KY">
+        Cayman Islands 
+            </option>
+        <option value="CF">
+        Central African Republic (République centrafricaine) 
+            </option>
+        <option value="TD">
+        Chad (Tchad) 
+            </option>
+        <option value="CL">
+        Chile 
+            </option>
+        <option value="CN" selected="selected">
+        China (中国) 
+            </option>
+        <option value="CX">
+        Christmas Island 
+            </option>
+        <option value="CC">
+        Cocos (Keeling) Islands 
+            </option>
+        <option value="CO">
+        Colombia 
+            </option>
+        <option value="KM">
+        Comoros (جزر القمر‎) 
+            </option>
+        <option value="CG">
+        Congo (Congo-Brazzaville) 
+            </option>
+        <option value="CD">
+        Congo,the Democratic Republic of the (Jamhuri ya Kidemokrasia ya Kongo) 
+            </option>
+        <option value="CK">
+        Cook Islands 
+            </option>
+        <option value="CR">
+        Costa Rica 
+            </option>
+        <option value="CI">
+        Cote d'Ivoire 
+            </option>
+        <option value="HR">
+        Croatia (Hrvatska) 
+            </option>
+        <option value="CU">
+        Cuba 
+            </option>
+        <option value="CW">
+        Curacao 
+            </option>
+        <option value="CY">
+        Cyprus (Κύπρος) 
+            </option>
+        <option value="CZ">
+        Czech Republic (Česká republika) 
+            </option>
+        <option value="DK">
+        Denmark (Danmark) 
+            </option>
+        <option value="DJ">
+        Djibouti 
+            </option>
+        <option value="DM">
+        Dominica 
+            </option>
+        <option value="DO">
+        Dominican Republic (República Dominicana) 
+            </option>
+        <option value="EC">
+        Ecuador 
+            </option>
+        <option value="EG">
+        Egypt (مصر‎) 
+            </option>
+        <option value="SV">
+        El Salvador 
+            </option>
+        <option value="GQ">
+        Equatorial Guinea (Guinea Ecuatorial) 
+            </option>
+        <option value="ER">
+        Eritrea 
+            </option>
+        <option value="EE">
+        Estonia (Eesti) 
+            </option>
+        <option value="ET">
+        Ethiopia 
+            </option>
+        <option value="FK">
+        Falkland Islands (Islas Malvinas) 
+            </option>
+        <option value="FO">
+        Faroe Islands (Føroyar) 
+            </option>
+        <option value="FJ">
+        Fiji 
+            </option>
+        <option value="FI">
+        Finland (Suomi) 
+            </option>
+        <option value="FR">
+        France 
+            </option>
+        <option value="GF">
+        French Guiana (Guyane française) 
+            </option>
+        <option value="PF">
+        French Polynesia (Polynésie française) 
+            </option>
+        <option value="TF">
+        French Southern Territories (Terres australes françaises) 
+            </option>
+        <option value="GA">
+        Gabon 
+            </option>
+        <option value="GM">
+        Gambia 
+            </option>
+        <option value="GE">
+        Georgia (საქართველო) 
+            </option>
+        <option value="DE">
+        Germany (Deutschland) 
+            </option>
+        <option value="GH">
+        Ghana (Gaana) 
+            </option>
+        <option value="GI">
+        Gibraltar 
+            </option>
+        <option value="GR">
+        Greece (Ελλάδα) 
+            </option>
+        <option value="GL">
+        Greenland (Kalaallit Nunaat) 
+            </option>
+        <option value="GD">
+        Grenada 
+            </option>
+        <option value="GP">
+        Guadeloupe 
+            </option>
+        <option value="GU">
+        Guam 
+            </option>
+        <option value="GT">
+        Guatemala 
+            </option>
+        <option value="GG">
+        Guernsey 
+            </option>
+        <option value="GN">
+        Guinea (Guinée) 
+            </option>
+        <option value="GW">
+        Guinea-Bissau (Guiné Bissau) 
+            </option>
+        <option value="GY">
+        Guyana 
+            </option>
+        <option value="HT">
+        Haiti 
+            </option>
+        <option value="HM">
+        Heard Island and McDonald Islands 
+            </option>
+        <option value="VA">
+        Holy See (Vatican City State) (Città del Vaticano) 
+            </option>
+        <option value="HN">
+        Honduras 
+            </option>
+        <option value="HK">
+        Hong Kong (香港) 
+            </option>
+        <option value="HU">
+        Hungary (Magyarország) 
+            </option>
+        <option value="IS">
+        Iceland (Ísland) 
+            </option>
+        <option value="IN">
+        India (भारत) 
+            </option>
+        <option value="ID">
+        Indonesia 
+            </option>
+        <option value="IR">
+        Iran,Islamic Republic of (ایران‎) 
+            </option>
+        <option value="IQ">
+        Iraq (العراق‎) 
+            </option>
+        <option value="IE">
+        Ireland 
+            </option>
+        <option value="IM">
+        Isle of Man 
+            </option>
+        <option value="IL">
+        Israel (ישראל‎) 
+            </option>
+        <option value="IT">
+        Italy (Italia) 
+            </option>
+        <option value="JM">
+        Jamaica 
+            </option>
+        <option value="JP">
+        Japan (日本) 
+            </option>
+        <option value="JE">
+        Jersey 
+            </option>
+        <option value="JO">
+        Jordan (الأردن‎) 
+            </option>
+        <option value="KZ">
+        Kazakhstan (Казахстан) 
+            </option>
+        <option value="KE">
+        Kenya 
+            </option>
+        <option value="KI">
+        Kiribati 
+            </option>
+        <option value="KP">
+        Korea,Democratic People's Republic of (조선 민주주의 인민 공화국) 
+            </option>
+        <option value="KR">
+        Korea,Republic of (대한민국) 
+            </option>
+        <option value="KW">
+        Kuwait (الكويت‎) 
+            </option>
+        <option value="KG">
+        Kyrgyzstan 
+            </option>
+        <option value="LA">
+        Lao People's Democratic Republic (ສ.ປ.ປ ລາວ) 
+            </option>
+        <option value="LV">
+        Latvia (Latvija) 
+            </option>
+        <option value="LB">
+        Lebanon (لبنان‎) 
+            </option>
+        <option value="LS">
+        Lesotho 
+            </option>
+        <option value="LR">
+        Liberia 
+            </option>
+        <option value="LY">
+        Libya (ليبيا‎) 
+            </option>
+        <option value="LI">
+        Liechtenstein 
+            </option>
+        <option value="LT">
+        Lithuania (Lietuva) 
+            </option>
+        <option value="LU">
+        Luxembourg 
+            </option>
+        <option value="MO">
+        Macao (澳門) 
+            </option>
+        <option value="MK">
+        Macedonia,the former Yugoslav Republic of (Македонија) 
+            </option>
+        <option value="MG">
+        Madagascar (Madagasikara) 
+            </option>
+        <option value="MW">
+        Malawi 
+            </option>
+        <option value="MY">
+        Malaysia 
+            </option>
+        <option value="MV">
+        Maldives 
+            </option>
+        <option value="ML">
+        Mali 
+            </option>
+        <option value="MT">
+        Malta 
+            </option>
+        <option value="MH">
+        Marshall Islands 
+            </option>
+        <option value="MQ">
+        Martinique 
+            </option>
+        <option value="MR">
+        Mauritania (موريتانيا‎) 
+            </option>
+        <option value="MU">
+        Mauritius (Moris) 
+            </option>
+        <option value="YT">
+        Mayotte 
+            </option>
+        <option value="MX">
+        Mexico (México) 
+            </option>
+        <option value="FM">
+        Micronesia,Federated States of 
+            </option>
+        <option value="MD">
+        Moldova,Republic of (Republica Moldova) 
+            </option>
+        <option value="MC">
+        Monaco 
+            </option>
+        <option value="MN">
+        Mongolia (Монгол) 
+            </option>
+        <option value="ME">
+        Montenegro (Crna Gora) 
+            </option>
+        <option value="MS">
+        Montserrat 
+            </option>
+        <option value="MA">
+        Morocco (المغرب‎) 
+            </option>
+        <option value="MZ">
+        Mozambique (Moçambique) 
+            </option>
+        <option value="MM">
+        Myanmar (မြန်မာ) 
+            </option>
+        <option value="NA">
+        Namibia 
+            </option>
+        <option value="NR">
+        Nauru 
+            </option>
+        <option value="NP">
+        Nepal (नेपाल) 
+            </option>
+        <option value="NL">
+        Netherlands (Nederland) 
+            </option>
+        <option value="NC">
+        New Caledonia (Nouvelle-Calédonie) 
+            </option>
+        <option value="NZ">
+        New Zealand 
+            </option>
+        <option value="NI">
+        Nicaragua 
+            </option>
+        <option value="NE">
+        Niger (Nijar) 
+            </option>
+        <option value="NG">
+        Nigeria 
+            </option>
+        <option value="NU">
+        Niue 
+            </option>
+        <option value="NF">
+        Norfolk Island 
+            </option>
+        <option value="MP">
+        Northern Mariana Islands 
+            </option>
+        <option value="NO">
+        Norway (Norge) 
+            </option>
+        <option value="OM">
+        Oman (عُمان‎) 
+            </option>
+        <option value="PK">
+        Pakistan (پاکستان‎) 
+            </option>
+        <option value="PW">
+        Palau 
+            </option>
+        <option value="PS">
+        Palestine,State of (فلسطين‎) 
+            </option>
+        <option value="PA">
+        Panama (Panamá) 
+            </option>
+        <option value="PG">
+        Papua New Guinea 
+            </option>
+        <option value="PY">
+        Paraguay 
+            </option>
+        <option value="PE">
+        Peru 
+            </option>
+        <option value="PH">
+        Philippines 
+            </option>
+        <option value="PN">
+        Pitcairn 
+            </option>
+        <option value="PL">
+        Poland (Polska) 
+            </option>
+        <option value="PT">
+        Portugal 
+            </option>
+        <option value="PR">
+        Puerto Rico 
+            </option>
+        <option value="QA">
+        Qatar (قطر‎) 
+            </option>
+        <option value="RE">
+        Reunion 
+            </option>
+        <option value="RO">
+        Romania (România) 
+            </option>
+        <option value="RU">
+        Russian Federation (Россия) 
+            </option>
+        <option value="RW">
+        Rwanda 
+            </option>
+        <option value="BL">
+        Saint Barth\u00e9lemy (Saint-Barthélémy) 
+            </option>
+        <option value="SH">
+        Saint Helena,Ascension and Tristan da Cunha 
+            </option>
+        <option value="KN">
+        Saint Kitts and Nevis 
+            </option>
+        <option value="LC">
+        Saint Lucia 
+            </option>
+        <option value="MF">
+        Saint Martin [French part] (Saint-Martin [partie française]) 
+            </option>
+        <option value="PM">
+        Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon) 
+            </option>
+        <option value="VC">
+        Saint Vincent and the Grenadines 
+            </option>
+        <option value="WS">
+        Samoa 
+            </option>
+        <option value="SM">
+        San Marino 
+            </option>
+        <option value="ST">
+        Sao Tome and Principe (São Tomé e Príncipe) 
+            </option>
+        <option value="SA">
+        Saudi Arabia (المملكة العربية السعودية‎) 
+            </option>
+        <option value="SN">
+        Senegal (Sénégal) 
+            </option>
+        <option value="RS">
+        Serbia (Србија) 
+            </option>
+        <option value="SC">
+        Seychelles 
+            </option>
+        <option value="SL">
+        Sierra Leone 
+            </option>
+        <option value="SG">
+        Singapore 
+            </option>
+        <option value="SX">
+        Sint Maarten (Dutch part) 
+            </option>
+        <option value="SK">
+        Slovakia (Slovensko) 
+            </option>
+        <option value="SI">
+        Slovenia (Slovenija) 
+            </option>
+        <option value="SB">
+        Solomon Islands 
+            </option>
+        <option value="SO">
+        Somalia (Soomaaliya) 
+            </option>
+        <option value="ZA">
+        South Africa 
+            </option>
+        <option value="GS">
+        South Georgia and the South Sandwich Islands 
+            </option>
+        <option value="SS">
+        South Sudan (جنوب السودان‎) 
+            </option>
+        <option value="ES">
+        Spain 
+            </option>
+        <option value="LK">
+        Sri Lanka (ශ්‍රී ලංකාව)) 
+            </option>
+        <option value="SD">
+        Sudan (السودان‎) 
+            </option>
+        <option value="SR">
+        Suriname 
+            </option>
+        <option value="SJ">
+        Svalbard and Jan Mayen (Svalbard og Jan Mayen) 
+            </option>
+        <option value="SZ">
+        Swaziland 
+            </option>
+        <option value="SE">
+        Sweden (Sverige) 
+            </option>
+        <option value="CH">
+        Switzerland (Schweiz) 
+            </option>
+        <option value="SY">
+        Syrian Arab Republic (سوريا‎) 
+            </option>
+        <option value="TW">
+        Taiwan (台灣) 
+            </option>
+        <option value="TJ">
+        Tajikistan 
+            </option>
+        <option value="TZ">
+        Tanzania,United Republic of 
+            </option>
+        <option value="TH">
+        Thailand (ไทย) 
+            </option>
+        <option value="TL">
+        Timor-Leste 
+            </option>
+        <option value="TG">
+        Togo 
+            </option>
+        <option value="TK">
+        Tokelau 
+            </option>
+        <option value="TO">
+        Tonga 
+            </option>
+        <option value="TT">
+        Trinidad and Tobago 
+            </option>
+        <option value="TN">
+        Tunisia (تونس‎) 
+            </option>
+        <option value="TR">
+        Turkey (Türkiye) 
+            </option>
+        <option value="TM">
+        Turkmenistan 
+            </option>
+        <option value="TC">
+        Turks and Caicos Islands 
+            </option>
+        <option value="TV">
+        Tuvalu 
+            </option>
+        <option value="UG">
+        Uganda 
+            </option>
+        <option value="UA">
+        Ukraine (Україна) 
+            </option>
+        <option value="AE">
+        United Arab Emirates (الإمارات العربية المتحدة‎) 
+            </option>
+        <option value="GB">
+        United Kingdom 
+            </option>
+        <option value="US">
+        United States 
+            </option>
+        <option value="UM">
+        United States Minor Outlying Islands 
+            </option>
+        <option value="UY">
+        Uruguay 
+            </option>
+        <option value="UZ">
+        Uzbekistan (Ўзбекистон) 
+            </option>
+        <option value="VU">
+        Vanuatu 
+            </option>
+        <option value="VE">
+        Venezuela,Bolivarian Republic of 
+            </option>
+        <option value="VN">
+        Vietnam (Việt Nam) 
+            </option>
+        <option value="VG">
+        Virgin Islands,British 
+            </option>
+        <option value="VI">
+        Virgin Islands,U.S. 
+            </option>
+        <option value="WF">
+        Wallis and Futuna 
+            </option>
+        <option value="EH">
+        Western Sahara (الصحراء الغربية‎) 
+            </option>
+        <option value="YE">
+        Yemen (اليمن‎) 
+            </option>
+        <option value="ZM">
+        Zambia 
+            </option>
+        <option value="ZW">
+        Zimbabwe 
+            </option>
+</select>
+            </div>
+        </li>
+                        <li>
+                    <h3>Gender</h3>
+    <div class="fieldsetWrapper">
+        <fieldset class="formInlineCheckedSet">
+                    <ul>
+                            <li>    <label>
+                <input name="gender" value="male" type="radio">
+                <span class="gender">Male</span>
+    </label>
+</li>
+                            <li>    <label>
+                <input name="gender" checked="checked" value="female" type="radio">
+                <span class="gender">Female</span>
+    </label>
+</li>
+                            <li>    <label>
+                <input name="gender" value="unspecified" type="radio">
+                <span class="gender">Unspecified</span>
+    </label>
+</li>
+                    </ul>
+    
+        </fieldset>
+    </div>
+
+        </li>
+                <li>
+                    <h3>Search Privacy</h3>
+    <div class="fieldsetWrapper">
+        <fieldset class="formInlineCheckedSet">
+                    <ul>
+                            <li>    <label>
+                    <div class="fancyToggle ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input class="ui-Checkbox Module" name="exclude_from_search" type="checkbox"></div>
+                <span class="exclude_from_search">Keep search engines (ex: Google) from showing your Pinterest profile in search results</span>
+    </label>
+</li>
+                    </ul>
+    
+        </fieldset>
+    </div>
+
+        </li>
+        <li>
+                                            <h3>Personalization</h3>
+    <div class="fieldsetWrapper">
+        <fieldset class="formInlineCheckedSet">
+                    <ul>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="personalize_from_offsite_browsing" type="checkbox"></div>
+                <span class="personalize_from_offsite_browsing">Let Pinterest personalize your experience based on other sites you visit · <a href="https://help.pinterest.com/entries/25010303">Learn more</a></span>
+    </label>
+</li>
+                    </ul>
+    
+        </fieldset>
+    </div>
+
+        </li>
+        <li>
+            <h3><label>Search history</label></h3>
+            <div>
+                <button type="button" class="rounded clearRecentSearches Button Module hasText btn">
+
+<span class="buttonText">Clear Recent Searches</span>
+        </button>
+                <span class="clearRecentSearchDetails">Remove things you've recently searched for from search suggestions</span>
+            </div>
+        </li>
+        <li>
+            <h3><label>Recent contacts</label></h3>
+            <div>
+                <button type="button" class="rounded Button clearRecentSentPins Module hasText btn">
+
+<span class="buttonText">Clear Recent Contacts</span>
+        </button>
+                <span class="clearRecentContactsDetails">Remove people you've sent pins to from recent contact suggestions</span>
+            </div>
+        </li>
+    </ul>
+            <ul class="emailSettings ">
+        <li class="sectionTitle">
+          <h2>Email Notifications</h2>
+        </li>
+        <li class="emailGlobalToggle">
+                    <h3>Get email notifications</h3>
+    <div class="fieldsetWrapper">
+        <fieldset class="formCheckedSet">
+                    <ul>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="email_enabled" type="checkbox"></div>
+                <span class="email_enabled"></span>
+    </label>
+</li>
+                    </ul>
+    
+        </fieldset>
+    </div>
+
+        </li>
+        <li>
+                    <h3>Get an email when someone</h3>
+    <div class="fieldsetWrapper">
+        <fieldset class="formCheckedSet">
+                    <ul>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="email_repins" type="checkbox"></div>
+                <span class="email_repins">Pins your pin</span>
+    </label>
+</li>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="email_likes" type="checkbox"></div>
+                <span class="email_likes">Likes your pin</span>
+    </label>
+</li>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="email_follows" type="checkbox"></div>
+                <span class="email_follows">Follows you or one of your boards</span>
+    </label>
+</li>
+                    </ul>
+    
+        </fieldset>
+    </div>
+
+        </li>
+        <li class="headlessSection">
+                    <h3>Send these emails</h3>
+    <div class="fieldsetWrapper">
+        <fieldset class="formInlineCheckedSet">
+                    <ul>
+                            <li>    <label>
+                <input name="email_interval" checked="checked" value="immediate" type="radio">
+                <span class="email_interval">When they happen</span>
+    </label>
+</li>
+                            <li>    <label>
+                <input name="email_interval" value="daily" type="radio">
+                <span class="email_interval">Once a day at most</span>
+    </label>
+</li>
+                    </ul>
+    
+        </fieldset>
+    </div>
+
+
+        </li>
+        <li>
+                    <h3>Also get an email when someone</h3>
+    <div class="fieldsetWrapper">
+        <fieldset class="formCheckedSet">
+                    <ul>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="email_comments" type="checkbox"></div>
+                <span class="email_comments">Comments on your pin</span>
+    </label>
+</li>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="email_shares" type="checkbox"></div>
+                <span class="email_shares">Sends you a pin</span>
+    </label>
+</li>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="email_friends_joining" type="checkbox"></div>
+                <span class="email_friends_joining">From your other social networks joins Pinterest</span>
+    </label>
+</li>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="email_collaboration_invite" type="checkbox"></div>
+                <span class="email_collaboration_invite">Invites you to a group board</span>
+    </label>
+</li>
+                    </ul>
+    
+        </fieldset>
+    </div>
+
+
+                    </li>
+        <li>
+            
+                    <h3>Other kinds of emails you can get</h3>
+    <div class="fieldsetWrapper">
+        <fieldset class="formCheckedSet">
+                    <ul>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="email_product_changes" type="checkbox"></div>
+                <span class="email_product_changes">Price changes for Pins you add</span>
+    </label>
+</li>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="email_suggestions" type="checkbox"></div>
+                <span class="email_suggestions">Stuff you might like</span>
+    </label>
+</li>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="email_news" type="checkbox"></div>
+                <span class="email_news">Weekly inspiration</span>
+    </label>
+</li>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="email_updates" type="checkbox"></div>
+                <span class="email_updates">Feature announcements and updates</span>
+    </label>
+</li>
+                            <li>    <label>
+                    <div class="fancyToggle on ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input checked="checked" class="ui-Checkbox Module" name="email_feedback_and_research" type="checkbox"></div>
+                <span class="email_feedback_and_research">Surveys and ways to help improve Pinterest</span>
+    </label>
+</li>
+                    </ul>
+    
+        </fieldset>
+    </div>
+
+        </li>
+    </ul>
+
+    <ul class="UserSocialNetworkSettings Module">
+
+
+
+
+
+
+
+<li class="sectionTitle">
+  <h2>Social Networks</h2>
+</li>
+
+<li class="socialHeader">
+    <h4>
+        <span class="socialIconFacebook"></span>
+                    Not connected
+            </h4>
+</li>
+<li>
+            <h3>Log in with Facebook</h3>
+    <div class="fieldsetWrapper">
+        <fieldset class="formCheckedSet">
+                    <ul>
+                            <li>    <label>
+                    <div class="fancyToggle ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input class="ui-Checkbox Module" name="login_with_facebook" type="checkbox"></div>
+                <span class="login_with_facebook">Use your Facebook account to log in</span>
+    </label>
+</li>
+                    </ul>
+    
+        </fieldset>
+    </div>
+
+</li>
+<li class="socialHeader">
+    <h4>
+        <span class="socialIconTwitter"></span>
+                    Not connected
+            </h4>
+</li>
+<li>
+            <h3>Log in with Twitter</h3>
+    <div class="fieldsetWrapper">
+        <fieldset class="formCheckedSet">
+                    <ul>
+                            <li>    <label>
+                    <div class="fancyToggle ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input class="ui-Checkbox Module" name="login_with_twitter" type="checkbox"></div>
+                <span class="login_with_twitter">Use your Twitter account to log in</span>
+    </label>
+</li>
+                    </ul>
+    
+        </fieldset>
+    </div>
+
+</li>
+
+<li class="socialHeader">
+    <h4>
+        <span class="socialIconGplus"></span>
+                    Not connected to Google+
+            </h4>
+</li>
+
+<li>
+            <h3>Connect with Google+</h3>
+    <div class="fieldsetWrapper">
+        <fieldset class="formCheckedSet">
+                    <ul>
+                            <li>    <label>
+                    <div class="fancyToggle ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input class="ui-Checkbox Module" name="connectToGplus" type="checkbox"></div>
+                <span class="connectToGplus">Connect to Google+</span>
+    </label>
+</li>
+                    </ul>
+    
+        </fieldset>
+    </div>
+
+</li>
+
+<li class="socialHeader">
+    <h4>
+        <span class="socialIconGoogle"></span>
+                    Not connected to Gmail
+            </h4>
+</li>
+
+<li>
+            <h3>Connect with Gmail</h3>
+    <div class="fieldsetWrapper">
+        <fieldset class="formCheckedSet">
+                    <ul>
+                            <li>    <label>
+                    <div class="fancyToggle ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input class="ui-Checkbox Module" name="connectToGoogle" type="checkbox"></div>
+                <span class="connectToGoogle">Connect to Gmail</span>
+    </label>
+</li>
+                    </ul>
+    
+        </fieldset>
+    </div>
+
+</li>
+
+<li class="socialHeader">
+    <h4>
+        <span class="socialIconYahoo"></span>
+                    Not connected to Yahoo
+            </h4>
+</li>
+<li>
+            <h3>Connect with Yahoo</h3>
+    <div class="fieldsetWrapper">
+        <fieldset class="formCheckedSet">
+                    <ul>
+                            <li>    <label>
+                    <div class="fancyToggle ui-Checkbox Module"><div class="slider"></div>
+    <p class="onText status">Yes</p>
+    <p class="offText status">No</p>
+    <input class="ui-Checkbox Module" name="connectToYahoo" type="checkbox"></div>
+                <span class="connectToYahoo">Connect to Yahoo</span>
+    </label>
+</li>
+                    </ul>
+    
+        </fieldset>
+    </div>
+
+</li></ul>
+
+    <div class="formFooter">
+
+        <div class="formFooterDelete">
+
+            <button type="button" class="rounded deleteAccountButton Button Module hasText btn">
+
+<span class="buttonText">Deactivate Account</span>
+        </button>
+        </div>
+
+        <div class="formFooterButtons">
+
+
+                        <button type="button" class="rounded NavigateButton Button Module hasText cancel btn">
+
+<span class="buttonText">Cancel</span>
+        </button>
+
+            <button type="submit" class="rounded Button primary Module hasText btn saveSettingsButton">
+
+<span class="buttonText">Save Settings</span>
+        </button>
+        </div>
+    </div>
+</form></div>
+    </div>
+    <div class="appendedContainer">
+    </div>
+</div>
+
+
+<div class="NagNoScript NagBase Module centeredWithinWrapper">
+
+
+<noscript>
+    
+
+    
+    <div class="message">Oh no! Pinterest doesn't work unless you <a href="http://enable-javascript.com/" rel="nofollow">turn on JavaScript.</a></div>
+
+
+    <style>
+        .NagBase {
+            display: none;
+        }
+    </style>
+</noscript></div></div>    
+        <script>
+        P.setFacebookKey(274266067164);
+        P.setContext({"app_version": "0300d68"});
+        P.setStrings({"facebookContact": "Facebook", "cancel": "Cancel", "emailTo": "Email to {{ email_address }}", "facebookAccountDoesntMatch": "Oops! Your account is linked to a different Facebook account than the one you're logged into now.", "createFirstBoard": "You collect your pins onto boards-create as many as you need!", "resendConfirmationEmailNoOp": "Your account has already been confirmed.", "passwordSamePasswordStr": "Password and username can't match", "formPhoneNumberNotValid": "Not a phone number.", "passwordBadStyle": "Not proper style", "suggestedUsername": "Suggested username", "errorMessage": "Sorry! Something went wrong on our end!", "yahoo": "Yahoo", "emailAddress": "Email address", "passwordGoodPasswordStr": "Great!", "gplus": "Google+", "formEmailNotValid": "Not a valid email.", "resendConfirmationEmailSuccess": "Thanks! You should receive a confirmation email soon.", "autobahnEndTourTextV1": "Try a pin search below. <br>(The more specific, the better!)", "inviteMessage": "Join me on Pinterest!", "continue": "Continue", "error": "Error", "errorTitle": "Whoops!", "offsiteInvalidToken": "Sorry! This redirect link has expired.", "google": "Gmail", "formFieldRequired": "Required", "oneNewPin": "1 new pin", "savePinTutorial": "Want to save this pin for yourself? Go ahead and Pin it.", "connectError": "Couldn't connect. You must authorize Pinterest.", "facebook": "Facebook", "pickEmailAddress": "Enter an email address", "blockPinner": "Block Pinner", "passwordTooShort": "Too short", "autobahnEndTourTitleV1": "Psst! Before you leave...", "successInviteSentToEmail": "Success! Invitation sent to {{ email }}", "formURLNotValid": "Not a valid url.", "emailUpdated": "Your email has been updated.", "passwordBlackPasswordStr": "Please try using a stronger password", "gplusContact": "Google", "popupErrorMessage": "You must enable popups!", "removeBounceNag": "Got it! Make sure your inbox isn't full so that our emails can find their way to you.", "ok": "Ok", "passwordMustBeSet": "A password must be set before unlinking.", "newPins": "new pins", "removePinner": "Remove Pinner", "fellowPinner": "Fellow Pinner"});
+        P.setPageInfo(null);
+        P.setRoutes([{"named": {"name": 0, "method": 1}, "resource_method": "${method}", "resource": {"name": "${name}", "options": "?{options}"}, "url": "^\/resource\/([^\/]+)\/([^\/]+)\/$", "allow_full_page": false, "module": "?{module_name}", "options": "?{module_options}", "append": "?{append}"}, {"named": {"name": 0}, "resource": {"name": "?{resource_name}", "options": "?{options}"}, "url": "^\/module\/([^\/]+)\/$", "allow_full_page": false, "module": "${name}", "error_strategy": "?{error_strategy}", "options": "?{module_options}", "append": "?{append}"}, {"named": {}, "resource": {"name": "BaseSearchResource", "options": {"scope": "pins", "query": "?{q}"}}, "log": {"view_parameter": 43, "view_type": 2}, "url": "^\/search\/$", "options": {"scope": "pins", "query": "?{q}"}, "module": "SearchPage"}, {"named": {"scope": 0}, "resource": {"name": "BaseSearchResource", "options": {"scope": "${scope}", "show_scope_selector": true, "query": "?{q}"}}, "log": {"helper_data": {"scope": "${scope}"}, "view_type": 2}, "url": "^\/search\/([^\/]+)\/$", "options": {"scope": "${scope}", "query": "?{q}"}, "module": "SearchPage"}, {"named": {}, "resource": {}, "url": "^\/oauth\/dialog\/$", "require_authentication": true, "module": "OAuthDialog", "content_only": true, "https": true, "options": {"scope": "?{scope}", "state": "?{state}", "redirect_uri": "?{redirect_uri}", "response_type": "?{response_type}", "consumer_id": "?{consumer_id}"}}, {"named": {}, "resource": {}, "log": {"view_parameter": 92, "view_type": 1}, "url": "^\/$", "optimizely_eligible_page": true, "https_if_unauth": true, "module": "HomePage", "content_only_if_unauth": true, "deep_link": "pinterest:\/\/", "options": {"tab": "following"}}, {"url": "^\/categories\/$", "named": {}, "resource": {}, "options": {}, "module": "CategoriesPage"}, {"url": "^\/categories\/([^\/]+)\/$", "named": {"category": 0}, "resource": {}, "options": {"feed": "${category}", "is_category": true}, "module": "FeedPage"}, {"named": {}, "resource": {}, "log": {"view_parameter": 2, "view_type": 1}, "url": "^\/all\/$", "options": {"feed": "everything"}, "module": "FeedPage"}, {"named": {"category": 0}, "resource": {}, "log": {"helper_data": {"feed": "${category}", "is_category": true}, "view_type": 1}, "url": "^\/all\/([^\/]+)\/$", "options": {"feed": "${category}", "is_category": true}, "module": "FeedPage"}, {"named": {}, "resource": {}, "log": {"view_parameter": 3, "view_type": 1}, "url": "^\/popular\/$", "options": {"feed": "popular"}, "module": "FeedPage"}, {"named": {}, "resource": {}, "log": {"view_parameter": 85, "view_type": 1}, "url": "^\/gifts\/$", "options": {"feed": "gifts"}, "module": "FeedPage"}, {"named": {}, "resource": {}, "log": {"view_parameter": 128, "view_type": 1}, "url": "^\/videos\/$", "options": {"feed": "videos"}, "module": "FeedPage"}, {"url": "^\/annotations\/([^\/]+)\/([^\/]+)\/$", "named": {"annotation": 0, "board": 1}, "resource": {"name": "BoardAnnotationResource", "options": {"board_id": "${board}"}}, "options": {"board_id": "${board}", "annotation": "${annotation}"}, "module": "AnnotationFeedPage"}, {"url": "^\/interests\/([^\/]+)\/$", "named": {"interest": 0}, "resource": {}, "options": {"interest": "${interest}"}, "module": "InterestFeedPage"}, {"url": "\/csrf_error\/$", "named": {}, "resource": {}, "options": {}, "module": "CsrfErrorPage"}, {"named": {}, "requires_decider_key": "fw_enabled", "resource": {}, "url": "^\/fashionweek\/$", "options": {}, "module": "promo.FashionWeek"}, {"named": {"feat": 0}, "requires_decider_key": "fw_enabled", "resource": {"name": "ManagedMapItemResource", "options": {"field_set_key": "detailed", "map": "featured_boards", "domain": "fashionweek", "key": "${feat}"}}, "url": "^\/fashionweek\/([^\/]+)\/$", "options": {}, "module": "promo.FashionWeek"}, {"named": {"section": 0}, "requires_decider_key": "fw_enabled", "resource": {"name": "ManagedListResource", "options": {"field_set_key": "grid_item", "domain": "fashionweek", "list": "${section}"}}, "url": "^\/fashionweek\/([^\/]+)\/all\/$", "options": {"show_all": true, "key": "${section}"}, "module": "promo.FashionWeekSection"}, {"named": {"username": 0, "slug": 1}, "requires_decider_key": "fw_enabled", "resource": {}, "url": "^\/fashionweek\/([^\/]+)\/([^\/]+)\/$", "options": {"username": "${username}", "slug": "${slug}"}, "module": "promo.FashionWeekBoardPage"}, {"require_authentication": true, "named": {"domain": 0}, "resource": {}, "url": "^\/source\/([^\/]+)\/$", "options": {"domain": "${domain}", "feed_item_type": "most_recent"}, "module": "DomainFeedPage"}, {"require_authentication": true, "named": {"domain": 0}, "resource": {}, "url": "^\/source\/([^\/]+)\/top\/repins\/$", "options": {"domain": "${domain}", "feed_item_type": "most_repinned", "aggregation": "?{aggregation}", "end_date": "?{end_date}"}, "module": "DomainFeedPage"}, {"require_authentication": true, "named": {"domain": 0}, "resource": {}, "url": "^\/source\/([^\/]+)\/top\/clicks\/$", "options": {"domain": "${domain}", "feed_item_type": "most_clicked", "aggregation": "?{aggregation}", "end_date": "?{end_date}"}, "module": "DomainFeedPage"}, {"require_authentication": true, "named": {"domain": 0}, "resource": {}, "url": "^\/source\/([^\/]+)\/trending\/$", "options": {"domain": "${domain}", "feed_item_type": "trending"}, "module": "DomainFeedPage"}, {"require_authentication": true, "named": {}, "resource": {}, "url": "^\/find_friends\/$", "options": {}, "module": "FindFriendsPage"}, {"require_authentication": true, "named": {}, "resource": {}, "url": "^\/find_friends\/facebook\/$", "options": {"tab": "facebook"}, "module": "FindFriendsPage"}, {"require_authentication": true, "named": {}, "resource": {}, "url": "^\/find_friends\/twitter\/$", "options": {"tab": "twitter"}, "module": "FindFriendsPage"}, {"require_authentication": true, "named": {}, "resource": {}, "url": "^\/find_friends\/invite\/$", "options": {"focus": "invite"}, "module": "FindFriendsPage"}, {"require_authentication": true, "named": {}, "resource": {"name": "FeedEditorPageResource"}, "url": "^\/edit_home\/$", "options": {"tab": "follow_boards"}, "module": "FeedEditorPage"}, {"require_authentication": true, "named": {}, "resource": {"name": "FeedEditorPageResource"}, "url": "^\/edit_home\/follow_boards\/$", "options": {"tab": "follow_boards"}, "module": "FeedEditorPage"}, {"require_authentication": true, "named": {}, "resource": {"name": "FeedEditorPageResource"}, "url": "^\/edit_home\/unfollow_boards\/$", "options": {"tab": "unfollow_boards"}, "module": "FeedEditorPage"}, {"named": {}, "resource": {}, "url": "^\/offsite\/$", "content_only": true, "options": {"url": "?{url}", "pin_id": "?{pin}", "token": "?{token}"}, "module": "OffsitePage"}, {"named": {}, "resource": {}, "url": "^\/f\/signup\/", "is_full_page": false, "module": "FramedSignupContent", "xframe_options_exempt": true, "https": true, "options": {"track_key": "?{track_key}", "message_type": "?{message_type}", "skip_nux": "?{skip_nux}"}}, {"named": {}, "resource": {}, "url": "^\/logout\/", "content_only": true, "options": {}, "module": "LogoutPage"}, {"named": {}, "resource": {}, "https": true, "url": "^\/login\/$", "content_only": true, "options": {"next": "?{next}"}, "module": "LoginPage"}, {"named": {}, "resource": {}, "https": true, "url": "^\/login\/reset\/$", "content_only": true, "options": {"username_or_email": "?{username_or_email}"}, "module": "PasswordResetOneClick"}, {"redirect": "\/", "named": {}, "resource": {}, "url": "^\/join\/signup\/", "options": {}, "module": ""}, {"redirect": "\/", "named": {}, "resource": {}, "url": "^\/signup\/", "options": {}, "module": ""}, {"named": {"network": 0}, "resource": {}, "url": "^\/join\/register\/([^\/]+)\/", "optimizely_eligible_page": true, "module": "UserRegisterPage", "content_only": true, "https": true, "options": {"network": "${network}"}}, {"named": {}, "resource": {}, "https": true, "url": "^\/join\/register\/", "content_only": true, "options": {"register": true}, "module": "LoginPage"}, {"named": {}, "resource": {}, "https": true, "url": "^\/join\/.*$", "content_only": true, "options": {"invite_follow_board": "?{boardname}", "register": true, "invite_follow_user": "?{username}", "next": "?{next}"}, "module": "LoginPage"}, {"require_authentication": true, "named": {"username": 0}, "resource": {}, "login_parameters": {"username": "${username}", "auto_follow": "true"}, "url": "^\/follow\/([^\/]+)\/*$", "options": {"username": "${username}"}, "module": "AutoFollow"}, {"require_authentication": true, "named": {"username": 0, "slug": 1}, "resource": {}, "login_parameters": {"username": "${username}", "boardname": "${slug}", "auto_follow": "true"}, "url": "^\/follow\/([^\/]+)\/([^\/]+)\/*$", "options": {"username": "${username}", "username_and_slug": "${username}\/${slug}"}, "module": "AutoFollow"}, {"require_authentication": true, "named": {}, "resource": {"name": "DomainVerifyResource"}, "url": "^\/website\/verify\/$", "options": {}, "module": "DomainVerify"}, {"url": "^\/business\/getstarted\/$", "named": {}, "resource": {"name": "UserResource", "options": {"username": "me"}}, "options": {"username": "me"}, "module": "BusinessGetStarted"}, {"require_authentication": true, "named": {}, "resource": {"name": "PartnerResource"}, "https": true, "url": "^\/business\/convert\/$", "options": {}, "module": "BusinessAccountConvert"}, {"url": "^\/business\/tools\/site-debugger\/$", "named": {}, "resource": {"name": "RichPinDebugResource", "options": {"link": "?{link}"}}, "options": {"link": "?{link}"}, "module": "RichPinDebugger"}, {"url": "^\/business\/tools\/rich-pin-builder\/$", "named": {}, "resource": {"name": "RichPinSamplePinResource", "options": {}}, "options": {}, "module": "RichPinBuilder"}, {"url": "^\/business\/tools\/rich-pin-validator\/$", "named": {}, "resource": {"name": "RichPinValidateResource", "options": {"link": "?{link}"}}, "options": {"link": "?{link}"}, "module": "RichPinValidator"}, {"url": "^\/browse\/([^\/]+)\/$", "named": {"query": 0}, "resource": {"name": "BrowseResource", "options": {"query": "${query}"}}, "options": {"query": "${query}"}, "module": "SearchPage"}, {"named": {}, "resource": {"name": "UserSettingsResource"}, "url": "^\/settings\/$", "require_authentication": true, "module": "UserSettingsPage", "https": true, "require_explicit_login": true, "options": {}}, {"named": {"username": 0}, "resource": {"name": "UserResource", "options": {"username": "${username}"}}, "url": "^\/([^\/]+)\/$", "deep_link": "pinterest:\/\/user\/${username}", "options": {"username": "${username}", "report_user_spam": "?{report_user_spam}", "show_follow_memo": "?{auto_follow}", "tab": "boards"}, "module": "UserProfilePage"}, {"named": {"username": 0}, "resource": {"name": "UserResource", "options": {"username": "${username}"}}, "url": "^\/([^\/]+)\/boards\/$", "deep_link": "pinterest:\/\/user\/${username}", "options": {"username": "${username}", "tab": "boards"}, "module": "UserProfilePage"}, {"named": {"username": 0}, "resource": {"name": "UserResource", "options": {"username": "${username}"}}, "url": "^\/([^\/]+)\/pins\/$", "deep_link": "pinterest:\/\/user\/${username}", "options": {"username": "${username}", "tab": "pins"}, "module": "UserProfilePage"}, {"named": {"username": 0}, "resource": {"name": "UserResource", "options": {"username": "${username}"}}, "url": "^\/([^\/]+)\/likes\/$", "deep_link": "pinterest:\/\/user\/${username}", "options": {"username": "${username}", "tab": "likes"}, "module": "UserProfilePage"}, {"named": {"username": 0}, "resource": {"name": "UserResource", "options": {"username": "${username}"}}, "url": "^\/([^\/]+)\/followers\/$", "deep_link": "pinterest:\/\/user\/${username}", "options": {"username": "${username}", "tab": "followers"}, "module": "UserProfilePage"}, {"named": {"username": 0}, "resource": {"name": "UserResource", "options": {"username": "${username}"}}, "url": "^\/([^\/]+)\/following\/$", "deep_link": "pinterest:\/\/user\/${username}", "options": {"username": "${username}", "tab": "following"}, "module": "UserProfilePage"}, {"require_authentication": true, "named": {"method": 0}, "resource": {}, "url": "^\/pin\/create\/([^\/]+)\/$", "content_only": true, "options": {"description": "?{description}", "title": "?{title}", "url": "?{url}", "image_url": "?{media}", "is_video": "?{is_video}", "method": "${method}"}, "module": "PinBookmarklet"}, {"url": "^\/pin\/find\/$", "named": {}, "resource": {"name": "FindPinImagesResource", "options": {"url": "?{url}"}}, "options": {}, "module": "ImagesFeedPage"}, {"named": {"id": 0}, "resource": {"name": "PinResource", "options": {"id": "${id}", "view_type": "detailed"}}, "url": "^\/pin\/([^\/]+)\/$", "deep_link": "pinterest:\/\/pin\/${id}", "options": {}, "module": "Closeup"}, {"named": {"id": 0}, "resource": {"name": "PinResource", "options": {"id": "${id}", "view_type": "detailed"}}, "url": "^\/pin\/([^\/]+)\/edit\/$", "module": "Closeup", "canonical_url": "\/pin\/${id}\/", "require_explicit_login": true, "options": {"show_edit": true}, "deep_link": "pinterest:\/\/pin\/${id}"}, {"named": {"id": 0}, "resource": {"name": "PinResource", "options": {"id": "${id}", "view_type": "detailed"}}, "url": "^\/pin\/([^\/]+)\/repin\/$", "deep_link": "pinterest:\/\/pin\/${id}", "options": {"show_repin": true}, "module": "Closeup", "canonical_url": "\/pin\/${id}\/"}, {"named": {"id": 0}, "resource": {"name": "PinResource", "options": {"id": "${id}", "view_type": "repin"}}, "url": "^\/pin\/([^\/]+)\/repin\/x\/$", "content_only": true, "options": {"action": "repin", "method": "bookmarklet"}, "module": "PinBookmarklet"}, {"url": "^\/pin\/([^\/]+)\/repins\/$", "named": {"id": 0}, "resource": {"name": "RepinFeedResource", "options": {"pin_id": "${id}", "page_size": 50}}, "options": {"pin_id": "${id}", "type": "repins"}, "module": "RepinsLikesFeedPage"}, {"url": "^\/pin\/([^\/]+)\/likes\/$", "named": {"id": 0}, "resource": {"name": "PinLikesResource", "options": {"pin_id": "${id}", "page_size": 50}}, "options": {"pin_id": "${id}", "type": "likes"}, "module": "RepinsLikesFeedPage"}, {"url": "^\/board\/create\/$", "named": {}, "resource": {}, "options": {}, "module": "BoardCreate"}, {"url": "^\/board\/([^\/]+)\/$", "named": {"id": 0}, "resource": {"name": "BoardResource", "options": {"board_id": "${id}", "field_set_key": "detailed"}}, "options": {"tab": "pins"}, "module": "BoardPage"}, {"named": {"username": 0, "slug": 1}, "resource": {"name": "BoardResource", "options": {"username": "${username}", "field_set_key": "detailed", "slug": "${slug}"}}, "url": "^\/([^\/]+)\/([^\/]+)\/$", "deep_link": "pinterest:\/\/board\/${username}\/${slug}", "options": {"show_follow_memo": "?{auto_follow}", "tab": "pins"}, "module": "BoardPage"}, {"url": "^\/([^\/]+)\/([^\/]+)\/search\/$", "named": {"username": 0, "slug": 1}, "resource": {"name": "BaseSearchResource", "options": {"board_slug": "${slug}", "scope": "my_pins", "user": "${username}", "query": "?{q}"}}, "options": {"board_slug": "${slug}", "scope": "my_pins", "user": "${username}", "query": "?{q}"}, "module": "SearchPage"}, {"named": {"username": 0, "slug": 1}, "resource": {"name": "BoardResource", "options": {"username": "${username}", "field_set_key": "detailed", "slug": "${slug}"}}, "url": "^\/([^\/]+)\/([^\/]+)\/edit\/$", "module": "BoardPage", "canonical_url": "\/${username}\/${slug}\/", "require_explicit_login": true, "options": {"show_edit": true, "tab": "pins"}, "deep_link": "pinterest:\/\/board\/${username}\/${slug}"}, {"named": {"username": 0, "slug": 1}, "resource": {"name": "BoardResource", "options": {"username": "${username}", "field_set_key": "detailed", "slug": "${slug}"}}, "url": "^\/([^\/]+)\/([^\/]+)\/pins\/$", "deep_link": "pinterest:\/\/board\/${username}\/${slug}", "options": {"tab": "pins"}, "module": "BoardPage"}, {"named": {"username": 0, "slug": 1}, "resource": {"name": "BoardResource", "options": {"username": "${username}", "field_set_key": "detailed", "slug": "${slug}"}}, "url": "^\/([^\/]+)\/([^\/]+)\/followers\/$", "deep_link": "pinterest:\/\/board\/${username}\/${slug}", "options": {"tab": "followers"}, "module": "BoardPage"}, {"named": {"username": 0, "slug": 1}, "resource": {"name": "BoardFeedResource", "options": {"username": "${username}", "slug": "${slug}"}}, "url": "^\/([^\/]+)\/([^\/]+)\/cover\/$", "deep_link": "pinterest:\/\/board\/${username}\/${slug}", "options": {"username": "${username}", "slug": "${slug}"}, "module": "BoardCoverEditPage"}, {"named": {}, "resource": {}, "https": true, "url": "^\/password\/change\/$", "options": {}, "module": "UserChangePassword"}, {"named": {}, "resource": {}, "https": true, "url": "^\/about\/trademark\/form\/$", "options": {}, "module": "TrademarkFormSelector"}, {"named": {"claim_type": 0}, "resource": {}, "https": true, "url": "^\/about\/trademark\/form\/([^\/]+)\/$", "options": {"claim_type": "${claim_type}"}, "module": "TrademarkForm"}, {"require_authentication": true, "named": {"domain": 0}, "resource": {"name": "DomainAnalyticsCountsResource", "options": {"domain": "${domain}", "start_date": "?{start_date}", "end_date": "?{end_date}"}}, "url": "^\/source\/([^\/]+)\/analytics\/$", "options": {"domain": "${domain}", "start_date": "?{start_date}", "end_date": "?{end_date}"}, "module": "DomainAnalyticsPage"}, {"url": "^\/verify_website\/$", "named": {}, "resource": {"name": "UserResource", "options": {"username": "me"}}, "options": {"username": "me"}, "module": "VerifyWebsite"}, {"sandbox": true, "named": {}, "resource": {}, "url": "^\/close_window\/$", "options": {}, "module": "Close"}]);
+        P.setPageRoutePattern("^\/settings\/$");
+        P.setPageLoadRequestIdentifier("479457906514");
+        P.start.start({"scrubbedUser": {"is_employee": false, "username": "lengjian", "locale": "en-US", "country": "CN", "autologin": null, "is_partner": false, "id": "377035937462380060"}, "tree": {"resource": null, "name": "App", "children": [{"resource": null, "name": "Header", "id": "header", "children": [{"resource": null, "name": "DropdownButton", "id": "categoriesDropdownButton", "children": [{"resource": null, "name": "Button", "children": [], "errorStrategy": 2, "options": {"has_icon": true, "text": "Categories", "primary_on_hover": true, "tagName": "button", "show_text": false, "class_name": "categories"}, "uid": "Button-11"}], "errorStrategy": 2, "options": {"class_name": "categoriesButton", "button_options": {"has_icon": true, "tagName": "button", "primary_on_hover": true, "class_name": "categories", "text": "Categories", "show_text": false}, "module": {"resource": {"name": "CategoriesResource", "options": {"browsable": true}}, "name": "CategoriesMenu"}, "dropdown_options": {"largeCaret": true, "fixed": true, "prefetch": true, "view_type": "categoriesMenu"}, "time": 500, "tutorial": {"topic": "categories", "text": "Browse Popular, DIY and other categories to find pins you like.", "title": "Here are your categories."}}, "uid": "DropdownButton-6"}, {"resource": null, "name": "ui.SearchForm", "id": "mainSearchTextbox", "children": [{"resource": null, "name": "ui.TypeaheadField", "id": "searchField", "children": [{"resource": null, "name": "ui.Typeahead", "id": "typeahead", "children": [], "errorStrategy": 2, "options": {"enable_recent_queries": true, "tags": "autocomplete", "class_name": "inHeader", "exclude_non_followers": null, "view_type": "search", "template": null}, "uid": "ui-Typeahead-13"}], "errorStrategy": 2, "options": {"enable_recent_queries": true, "name": "q", "view_type": "search", "class_name": "inHeader", "prefetch_on_focus": true, "value": "", "populate_on_result_highlight": true, "search_delay": 0, "search_on_focus": true, "placeholder": "Search", "tags": "autocomplete"}, "uid": "ui-TypeaheadField-12"}], "errorStrategy": 2, "options": {"class_name": "inHeader", "enable_recent_queries": true, "navigate_on_search": true, "placeholder": "Search"}, "uid": "ui-SearchForm-7"}, {"resource": null, "name": "DropdownButton", "children": [{"resource": null, "name": "Button", "children": [], "errorStrategy": 2, "options": {"class_name": "addPinHeader", "text": "Add a Pin", "primary_on_hover": true, "tagName": "button", "show_text": false, "has_icon": true}, "uid": "Button-14"}], "errorStrategy": 2, "options": {"class_name": "addPinWrapper", "dropdown_options": {"position_point": "BOTTOM_CENTER", "fixed": true, "prefetch": true}, "button_options": {"class_name": "addPinHeader", "tagName": "button", "primary_on_hover": true, "has_icon": true, "text": "Add a Pin", "show_text": false}, "module": {"name": "AddPin", "options": {"dropdown_style": true}}}, "uid": "DropdownButton-8"}, {"resource": {"name": "NotificationsCountResource", "options": {"bookmarks": ["-end-"]}}, "name": "NotificationsButton", "id": "notificationsButton", "children": [{"resource": null, "name": "Button", "children": [], "errorStrategy": 2, "options": {"class_name": "notifs", "text": "Notifications", "primary_on_hover": true, "tagName": "button", "show_text": false, "has_icon": true}, "uid": "Button-15"}], "errorStrategy": 2, "options": {"dropdown_options": {"position_point": "BOTTOM_RIGHT", "fixed": true, "display_while_loading": true, "view_type": "notificationsDropdown"}, "button_options": {"class_name": "notifs", "tagName": "button", "primary_on_hover": true, "has_icon": true, "text": "Notifications", "show_text": false}, "tutorial": {"topic": "notifications", "text": "Check the bubble to see your latest Pinterest activity.", "show": false, "title": "New Notifications!"}, "view_type": "merged"}, "uid": "NotificationsButton-9"}, {"resource": {"name": "UserResource", "options": {"username": "lengjian"}}, "name": "UserMenu", "id": "userMenu", "extraData": {"userId": "377035937462380060"}, "children": [], "errorStrategy": 2, "data": {}, "options": {"dropdown_options": {"class_name": "compact", "hide_caret": true, "fixed": true, "prefetch": true, "view_type": "userDropdown"}, "class_name": "userDropdown", "module": {"name": "UserDropdown", "options": {}}, "view_type": "merged"}, "uid": "UserMenu-10"}], "errorStrategy": 2, "options": {}, "uid": "Header-1"}, {"resource": null, "name": "ScrollToTop", "id": "scrollToTop", "children": [], "errorStrategy": 2, "options": {"tagName": "button"}, "uid": "ScrollToTop-2"}, {"resource": null, "name": "Nags", "children": [{"resource": null, "name": "NagBase", "extraData": {"type": "upgrade_ie"}, "children": [{"resource": null, "name": "Button", "children": [], "errorStrategy": 2, "options": {"class_name": "nagClose", "tagName": "button", "borderless": true}, "uid": "Button-17"}], "errorStrategy": 2, "data": {}, "options": {"can_close": true}, "uid": "NagBase-16"}], "errorStrategy": 2, "options": {}, "uid": "Nags-3"}, {"resource": {"name": "UserSettingsResource", "options": {"bookmarks": ["-end-"]}}, "name": "UserSettingsPage", "id": "mainModule", "extraData": {"change_password_text": "Change your password..."}, "children": [{"resource": null, "name": "ShowModalButton", "id": "userChangePasswordButton", "children": [], "errorStrategy": 2, "options": {"submodule": {"name": "UserChangePassword", "options": {"render_social_networks": true, "has_password": true}}, "class_name": "changePasswordButton", "text": "Change your password...", "tagName": "button", "borderless": true, "ga_category": "user_change_password"}, "uid": "ShowModalButton-18"}, {"resource": null, "name": "ShowModalButton", "id": "editProfileButton", "children": [], "errorStrategy": 2, "options": {"text": "Edit Profile", "submodule": {"resource": {"name": "UserSettingsResource"}, "name": "UserEdit", "options": {"user_id": "377035937462380060"}}, "ga_category": "user_edit", "tagName": "button"}, "uid": "ShowModalButton-19"}, {"resource": {"name": "LocalesResource", "options": {"bookmarks": ["-end-"]}}, "name": "ui.Select", "children": [], "errorStrategy": 2, "data": {}, "options": {"selected": "en-US", "name": "locale", "tagName": "select"}, "uid": "ui-Select-20"}, {"resource": {"name": "CountriesResource", "options": {"bookmarks": ["-end-"]}}, "name": "ui.Select", "children": [], "errorStrategy": 2, "data": {}, "options": {"selected": "CN", "name": "country", "tagName": "select", "placeholder_text": "Please select a country"}, "uid": "ui-Select-21"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": false, "name": "exclude_from_search", "tagName": "input"}, "uid": "ui-Checkbox-43"}], "errorStrategy": 2, "options": {"class_name": "", "checked": false, "name": "exclude_from_search", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-22"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "personalize_from_offsite_browsing", "tagName": "input"}, "uid": "ui-Checkbox-44"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "personalize_from_offsite_browsing", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-23"}, {"resource": null, "name": "Button", "id": "clearRecentSearches", "children": [], "errorStrategy": 2, "options": {"class_name": "clearRecentSearches", "text": "Clear Recent Searches", "tagName": "button"}, "uid": "Button-24"}, {"resource": null, "name": "Button", "id": "clearSendPinHistory", "children": [], "errorStrategy": 2, "options": {"class_name": "clearRecentSentPins", "text": "Clear Recent Contacts", "tagName": "button"}, "uid": "Button-25"}, {"resource": null, "name": "ui.Checkbox", "id": "emailGlobalToggle", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "email_enabled", "tagName": "input"}, "uid": "ui-Checkbox-45"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "email_enabled", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-26"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "email_repins", "tagName": "input"}, "uid": "ui-Checkbox-46"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "email_repins", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-27"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "email_likes", "tagName": "input"}, "uid": "ui-Checkbox-47"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "email_likes", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-28"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "email_follows", "tagName": "input"}, "uid": "ui-Checkbox-48"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "email_follows", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-29"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "email_comments", "tagName": "input"}, "uid": "ui-Checkbox-49"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "email_comments", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-30"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "email_shares", "tagName": "input"}, "uid": "ui-Checkbox-50"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "email_shares", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-31"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "email_friends_joining", "tagName": "input"}, "uid": "ui-Checkbox-51"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "email_friends_joining", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-32"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "email_collaboration_invite", "tagName": "input"}, "uid": "ui-Checkbox-52"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "email_collaboration_invite", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-33"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "email_product_changes", "tagName": "input"}, "uid": "ui-Checkbox-53"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "email_product_changes", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-34"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "email_suggestions", "tagName": "input"}, "uid": "ui-Checkbox-54"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "email_suggestions", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-35"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "email_news", "tagName": "input"}, "uid": "ui-Checkbox-55"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "email_news", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-36"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "email_updates", "tagName": "input"}, "uid": "ui-Checkbox-56"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "email_updates", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-37"}, {"resource": null, "name": "ui.Checkbox", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": true, "name": "email_feedback_and_research", "tagName": "input"}, "uid": "ui-Checkbox-57"}], "errorStrategy": 2, "options": {"class_name": "", "checked": true, "name": "email_feedback_and_research", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-38"}, {"resource": {"name": "UserSettingsResource", "options": {"bookmarks": ["-end-"]}}, "name": "UserSocialNetworkSettings", "id": "userSocialNetworkSettings", "extraData": {"connected_to_yahoo": false, "facebookTimelineEnabled": false, "twitterUrl": null, "gplusUrl": null, "facebookUrl": null, "facebookId": "", "connected_to_google": false, "has_password": true}, "children": [{"resource": null, "name": "ui.Checkbox", "id": "facebookToggle", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": null, "name": "login_with_facebook", "tagName": "input"}, "uid": "ui-Checkbox-63"}], "errorStrategy": 2, "options": {"class_name": "", "checked": null, "name": "login_with_facebook", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-58"}, {"resource": null, "name": "ui.Checkbox", "id": "twitterToggle", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": null, "name": "login_with_twitter", "tagName": "input"}, "uid": "ui-Checkbox-64"}], "errorStrategy": 2, "options": {"class_name": "", "checked": null, "name": "login_with_twitter", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-59"}, {"resource": null, "name": "ui.Checkbox", "id": "gplusToggle", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": null, "name": "connectToGplus", "tagName": "input"}, "uid": "ui-Checkbox-65"}], "errorStrategy": 2, "options": {"class_name": "", "checked": null, "name": "connectToGplus", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-60"}, {"resource": null, "name": "ui.Checkbox", "id": "googleToggle", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": false, "name": "connectToGoogle", "tagName": "input"}, "uid": "ui-Checkbox-66"}], "errorStrategy": 2, "options": {"class_name": "", "checked": false, "name": "connectToGoogle", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-61"}, {"resource": null, "name": "ui.Checkbox", "id": "yahooToggle", "children": [{"resource": null, "name": "ui.Checkbox", "children": [], "errorStrategy": 2, "options": {"disabled": false, "value": "", "checked": false, "name": "connectToYahoo", "tagName": "input"}, "uid": "ui-Checkbox-67"}], "errorStrategy": 2, "options": {"class_name": "", "checked": false, "name": "connectToYahoo", "value": "", "view_type": "fancyToggle"}, "uid": "ui-Checkbox-62"}], "errorStrategy": 2, "data": {}, "options": {"tagName": "ul"}, "uid": "UserSocialNetworkSettings-39"}, {"resource": null, "name": "Button", "id": "deleteAccount", "children": [], "errorStrategy": 2, "options": {"class_name": "deleteAccountButton", "text": "Deactivate Account", "tagName": "button"}, "uid": "Button-40"}, {"resource": null, "name": "NavigateButton", "children": [], "errorStrategy": 2, "options": {"class_name": "cancel", "text": "Cancel", "url": "\/lengjian\/", "tagName": "button"}, "uid": "NavigateButton-41"}, {"resource": null, "name": "Button", "id": "submitButton", "children": [], "errorStrategy": 2, "options": {"class_name": "saveSettingsButton", "color": "primary", "type": "submit", "tagName": "button", "text": "Save Settings"}, "uid": "Button-42"}], "errorStrategy": 0, "data": {"username": "lengjian", "is_partner": null}, "options": {}, "uid": "UserSettingsPage-4"}, {"resource": null, "name": "NagNoScript", "extraData": {"type": "no_script"}, "children": [], "errorStrategy": 2, "options": {}, "uid": "NagNoScript-5"}], "deps": ["App", "Header", "ScrollToTop", "Nags", "UserSettingsPage", "NagNoScript", "DropdownButton", "ui.SearchForm", "NotificationsButton", "UserMenu", "Button", "ui.TypeaheadField", "ui.Typeahead", "NagBase", "ShowModalButton", "ui.Select", "ui.Checkbox", "UserSocialNetworkSettings", "NavigateButton"], "errorStrategy": 2, "attributes": {"class": "App full Module", "id": "App-68"}, "options": {"module": {"data": {"last_name": "jian", "email_shares": true, "locale": "en-US", "collaborative_boards": [], "has_password": true, "email_enabled": true, "email_collaboration_invite": true, "id": "377035937462380060", "is_write_banned": false, "first_name": "leng", "personalize_from_offsite_browsing": true, "facebook_timeline_enabled": false, "email_news": true, "location": "", "email_feedback_and_research": true, "is_partner": null, "type": "user_settings", "email": "lgj1029@126.com", "website_url": "", "username": "lengjian", "email_comments": true, "email_friends_joining": true, "collab_board_email": {}, "email_likes": true, "email_repins": true, "email_bounced": false, "email_follows": true, "email_interval": "immediate", "email_product_changes": true, "facebook_publish_stream_enabled": false, "gender": "female", "email_updates": true, "exclude_from_search": false, "email_suggestions": true, "country": "CN", "about": ""}, "error_strategy": 0, "resource": {"name": "UserSettingsResource", "options": {"bookmarks": ["-end-"]}}, "name": "UserSettingsPage", "options": {}}}, "uid": "App-68"}, "canDebug": false, "gaAccountNumbers": ["UA-12967896-7"], "isLoggedIn": true, "initialContextLog": null});
+    </script>
+
+<div style="left: 13.5px; top: 37px;" class="Module Dropdown positionModuleFixed PositionModule categoriesMenu bigCaret defaultCaret positionModuleElement positionBottom"><span style="left: 36px;" class="positionModuleCaret"></span><div style="display: block;" class="ajax Module CategoriesMenu">
+
+
+
+
+
+
+    
+
+
+    <div class="categoriesWrapper ">
+        <ul class="firstColumn">
+                                                <li>
+        <a class="item" href="https://www.pinterest.com/" data-category="" data-force-refresh="1">
+            Home Feed
+        </a>
+    </li>
+
+                                                <li>
+        <a class="item" href="https://www.pinterest.com/popular/" data-category="popular" data-force-refresh="1">
+            Popular
+        </a>
+    </li>
+
+                                                <li>
+        <a class="item" href="https://www.pinterest.com/all/" data-category="everything" data-force-refresh="1">
+            Everything
+        </a>
+    </li>
+
+                                                <li>
+        <a class="item" href="https://www.pinterest.com/gifts/" data-category="gifts" data-force-refresh="1">
+            Gifts
+        </a>
+    </li>
+
+                                                <li>
+        <a class="item" href="https://www.pinterest.com/videos/" data-category="videos" data-force-refresh="1">
+            Videos
+        </a>
+    </li>
+
+                                                <li>
+        <a class="item" href="https://www.pinterest.com/all/animals/" data-category="animals" data-force-refresh="1">
+            Animals
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/architecture/" data-category="architecture" data-force-refresh="1">
+            Architecture
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/art/" data-category="art" data-force-refresh="1">
+            Art
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/cars_motorcycles/" data-category="cars_motorcycles" data-force-refresh="1">
+            Cars &amp; Motorcycles
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/celebrities/" data-category="celebrities" data-force-refresh="1">
+            Celebrities
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/design/" data-category="design" data-force-refresh="1">
+            Design
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/diy_crafts/" data-category="diy_crafts" data-force-refresh="1">
+            DIY &amp; Crafts
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/education/" data-category="education" data-force-refresh="1">
+            Education
+        </a>
+    </li>
+
+                    </ul>
+        <ul class="secondColumn">
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/film_music_books/" data-category="film_music_books" data-force-refresh="1">
+            Film, Music &amp; Books
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/food_drink/" data-category="food_drink" data-force-refresh="1">
+            Food &amp; Drink
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/gardening/" data-category="gardening" data-force-refresh="1">
+            Gardening
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/geek/" data-category="geek" data-force-refresh="1">
+            Geek
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/hair_beauty/" data-category="hair_beauty" data-force-refresh="1">
+            Hair &amp; Beauty
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/health_fitness/" data-category="health_fitness" data-force-refresh="1">
+            Health &amp; Fitness
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/history/" data-category="history" data-force-refresh="1">
+            History
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/holidays_events/" data-category="holidays_events" data-force-refresh="1">
+            Holidays &amp; Events
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/home_decor/" data-category="home_decor" data-force-refresh="1">
+            Home Decor
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/humor/" data-category="humor" data-force-refresh="1">
+            Humor
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/illustrations_posters/" data-category="illustrations_posters" data-force-refresh="1">
+            Illustrations &amp; Posters
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/kids/" data-category="kids" data-force-refresh="1">
+            Kids
+        </a>
+    </li>
+
+                    </ul>
+        <ul class="thirdColumn">
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/mens_fashion/" data-category="mens_fashion" data-force-refresh="1">
+            Men's Fashion
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/outdoors/" data-category="outdoors" data-force-refresh="1">
+            Outdoors
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/photography/" data-category="photography" data-force-refresh="1">
+            Photography
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/products/" data-category="products" data-force-refresh="1">
+            Products
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/quotes/" data-category="quotes" data-force-refresh="1">
+            Quotes
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/science_nature/" data-category="science_nature" data-force-refresh="1">
+            Science &amp; Nature
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/sports/" data-category="sports" data-force-refresh="1">
+            Sports
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/tattoos/" data-category="tattoos" data-force-refresh="1">
+            Tattoos
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/technology/" data-category="technology" data-force-refresh="1">
+            Technology
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/travel/" data-category="travel" data-force-refresh="1">
+            Travel
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/weddings/" data-category="weddings" data-force-refresh="1">
+            Weddings
+        </a>
+    </li>
+
+                                    <li>
+        <a class="item" href="https://www.pinterest.com/all/womens_fashion/" data-category="womens_fashion" data-force-refresh="1">
+            Women's Fashion
+        </a>
+    </li>
+
+            
+                                </ul>
+    </div>
+
+    <div class="AboutLinks ajax Module">
+
+
+<ul class="ajax List Module">
+
+
+    
+    <li data-index="0">
+                                                                                        <a class="external " target="_blank" href="http://www.pinterest.com/_/_/about/">
+                                            About</a>
+                                            
+                                    
+                        </li>
+    
+    <li data-index="1">
+                                                                                        <a class="external " target="_blank" href="http://blog.pinterest.com/">
+                                            Blog</a>
+                                            
+                                    
+                        </li>
+    
+    <li data-index="2">
+                                                                                        <a class="" href="http://www.pinterest.com/_/_/business">
+                                            Businesses</a>
+                                            
+                                    
+                        </li>
+    
+    <li data-index="3">
+                                                                                        <a class="" href="http://developers.pinterest.com/">
+                                            Developers</a>
+                                            
+                                    
+                        </li>
+    
+    <li data-index="4">
+                                                                                        <a class="skinny" href="http://www.pinterest.com/_/_/about/terms/">
+                                            Privacy &amp; Terms</a>
+                                            
+                                    
+                        </li>
+    
+    <li data-index="5">
+                                                                                        <a class="skinny" href="http://www.pinterest.com/_/_/about/copyright/">
+                                            Copyright &amp; Trademark</a>
+                                            
+                                    
+                        </li>
+</ul></div>
+</div></div><div style="left: 920.5px; top: 37px;" class="Module Dropdown positionModuleFixed PositionModule bigCaret defaultCaret positionModuleElement positionBottom"><span style="left: 1208.5px;" class="positionModuleCaret"></span><div style="display: block;" class="AddPin ajax isDropdown Module">
+    
+    <button type="button" class="pinUpload addPinDropdown ShowModalButton Button hasText Module ajax borderless">
+
+<em></em>
+<span class="buttonText">Upload a pin</span>
+        </button>
+
+    <button type="button" class="hasText ShowModalButton Button pinAddURL addPinDropdown Module ajax borderless">
+
+<em></em>
+<span class="buttonText">Add from a website</span>
+        </button>
+
+                <button type="button" class="ShowModalButton Button borderless hasText Module ajax createBoard addPinDropdown">
+
+<em></em>
+<span class="buttonText">Create a board</span>
+        </button>
+    
+            
+    </div></div><div style="left: 1056.5px; top: 37px;" class="Module Dropdown positionModuleFixed PositionModule compact userDropdown positionModuleElement positionBottom"><div style="display: block;" class="UserDropdown ajax Module">
+
+
+
+
+<ul class="ajax List Module">
+
+
+    
+    <li data-index="0">
+                                                                                        <a class="myBoards" href="https://www.pinterest.com/lengjian/boards/">
+                                            Your Boards</a>
+                                            
+                                    
+                        </li>
+    
+    <li data-index="1">
+                                                                                        <a class="myPins" href="https://www.pinterest.com/lengjian/pins/">
+                                            Your Pins</a>
+                                            
+                                    
+                        </li>
+    
+    <li data-index="2">
+                                                                                        <a class="" href="https://www.pinterest.com/lengjian/likes/">
+                                            Your Likes</a>
+                                            
+                                    
+                        </li>
+    
+    <li data-index="3">
+                                                                                        <a class="userMenuFindFriends" href="https://www.pinterest.com/find_friends/">
+                                            Find Friends</a>
+                                            
+                                    
+                        </li>
+    
+    <li data-index="4">
+                                                                                        <a class="userMenuFindBoards" href="javascript:void(0)">
+                                            Follow Boards</a>
+                                            
+                                    
+                        </li>
+    
+    <li data-index="5">
+                                                                                        <a class="external " target="_blank" href="https://www.pinterest.com/help/" data-ga="site_help">
+                                            Help Center</a>
+                                            
+                                    
+                        </li>
+    
+    <li data-index="6">
+                                                                                        <a class="" href="https://www.pinterest.com/settings/">
+                                            Settings</a>
+                                            
+                                    
+                        </li>
+    
+    <li data-index="7">
+                                                                                        <a class="" href="https://www.pinterest.com/logout/" data-ga="site_logout">
+                                            Log Out</a>
+                                            
+                                    
+                        </li>
+</ul></div></div></body></html>

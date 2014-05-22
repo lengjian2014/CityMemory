@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html class="en js csstransforms3d" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Pinterest</title>
+        <script type="text/javascript">var P_TIMER_START = new Date();</script>
+                <meta name="google-site-verification" content="084yfFbt4cT_4Gt1BBHFINQ71YTJCd9S47fL7IE7S1w">
+        <meta name="application-name" content="Pinterest">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://s-passets-ec.pinimg.com/images/logo_trans_144x144.png">        <link rel="icon" href="https://s-passets-ec.pinimg.com/images/favicon.png" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" href="https://s-passets-ec.pinimg.com/images/ipad_touch_icon.png">
+        <link rel="stylesheet" href="css/pinboard_47f8746c.css" type="text/css" media="all">
+        <!--[if (gt IE 6)&(lt IE 9)]><link rel="stylesheet" href="https://s-passets-ec.pinimg.com/css/ie7-and-up_88f69140.css" type="text/css" media="all" /><![endif]-->
+        <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+        <script type="text/javascript">if (!window.console) { window.console = {log: function(){}} };</script>
+        <script type="text/javascript">window.userIsAuthenticated = false;
+        </script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script src="js/bundle_pin_36ba617e.js" type="text/javascript" charset="utf-8"></script>
+                        <script>
+    if (!window.P) {
+        window.P = {};
+    }
+    P.SEARCH_FILTER_TYPES = JSON.parse('{"TAG_FACEBOOK_PINNER": "facebook_pinner", "TAG_TWITTER_PINNER": "twitter_pinner", "TAG_FACEBOOK_NON_PINNER": "facebook_non_pinner", "TAG_BOARD": "board", "TAG_OWNER_AND_COMMENTER": "owner_and_commenter", "TAG_GPLUS_NON_PINNER": "gplus_non_pinner", "TAG_MUTUAL_FOLLOW": "mutual_follow", "TAG_GPLUS_PINNER": "gplus_pinner", "TAG_FOLLOWEE": "followee", "TAG_TWITTER_NON_PINNER": "twitter_non_pinner"}');
+    P.SEARCH_LOADING = "https://s-passets-ec.pinimg.com/images/loading-typeahead.gif";
+    P.EMAIL_INVITE_ICON = "https://s-passets-ec.pinimg.com/images/board/email_invite_icon.png";
+    P.IS_AUTHENTICATED = false;
+</script>        <link rel="stylesheet" href="css/pinterest.css" type="text/css" media="all">
+
+<script type="text/javascript" src="js/photo_upload.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
+
+<script>
+    var weakPasswords = [
+        "pinterest", "password", "123456", "welcome ", "ninja", "abc123", "123456789", "12345678",
+        "sunshine", "princess", "qwerty", "master", "michael", "jordan", "dragon", "soccer", "killer",
+        "pepper", "devil", "princess", "1234567", "iloveyou"
+        ]
+    var passStrengthOpts = {
+        userid: "",
+        shortPassStr: 'Please use at least 6 characters', blackPassStr: 'Password too common',
+        badPassStr: 'Weak Password', goodPassStr: 'OK', strongPassStr: 'Great!',
+        samePasswordStr: 'Username and password identical',
+        badPassStyle: "bad_password", goodPassStyle: "ok_password", strongPassStyle: "strong_password"
+    };
+    $(document).ready( function() {
+        var passStrengthElem = $(".strength_validated_password")
+        if (passStrengthElem.length != 0) {
+            passStrengthElem.passStrength(
+                $(".submit_button_id"),$("#password_validation_msg"), weakPasswords, passStrengthOpts);
+        }
+    });
+</script>
+<script>
+    $('document').ready(function() {
+        $('input[type=checkbox][data-switcher=true]').switcher();
+
+        function validateBusinessType(data) {
+            var errorSpan = $('#id_account_type ~ span[class="error"]');
+            if (!data) {
+                errorSpan.text('This field is required.');
+            } else {
+                errorSpan.text('');
+            }
+        }
+
+        FancySelect.setup('#id_account_type', null, validateBusinessType, "#");
+
+        $('.FancySelectList ul li:first-child .primaryText').css('font-weight','normal');
+        $('.FancySelectList ul li:first-child .primaryText').css('color','grey');
+
+        $('#id_website').focusout(function(){
+            website = $(this).val();
+            website = website.replace(/^https?:\/\//,'');
+            $(this).val(website);
+        });
+
+        CharacterCount.truncateData("#id_about", 200);
+        // Don't use CharacterCount's validation by padding null for the submit button
+        CharacterCount.setup('#id_about', '#aboutCount', null, 200, 'characters remaining');
+
+                var $email =
+            $('#email');
+
+        P.Registration.setup(
+            $('.RegisterForm'),
+            $('#username'),
+            $email,
+            $('#password'),
+            $('#business_name, #first_name, #contact_name'),
+            $('#submitButton'),
+            '.error'
+        );
+        $('#submitButton').addClass('disabled');
+
+
+        $('.LegalTermsPrintIcon').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var url = $this.attr('href');
+            var popup = window.open(url, "_blank", "menubar=0,location=0,height=500,width=900");
+            popup.print();
+        });
+
+    });
+</script>
+
+    <script src="js/ga.js" async="" type="text/javascript"></script><script src="js/all.js" async=""></script></head>
+    <body><noscript>
+    <div id="NoScript">
+        <h1>You need to enable Javascript.</h1>
+    </div>
+</noscript>                    <div id="Header">
+    <div class="FixedContainer HeaderContainer">
+        <a href="https://www.pinterest.com/" id="Pinterest"></a>
+
+
+    </div>
+</div>    
+        <div class="FixedContainer">
+
+        <form id="profileEdit" class="RegisterForm PartnerForm Form StaticForm UserForm" action="/business/create/" method="post" enctype="multipart/form-data" accept-charset="utf-8" style="margin-top: 96px;">
+
+                            <h3>Create Business Account
+                    <div style="display: inline-block; float: right; font-size: 16px; margin-top: 6px; color: #CB2027;">
+                        Already have an account?
+                        <a href="https://www.pinterest.com/login/?next=%2Fbusiness%2Fconvert%2F" style="font-weight: 500; color: #8C7E7E;"> Convert</a>
+                    </div>
+                </h3>
+            
+            
+            
+            <ul class="ControlGroups intermediate clearfix">
+                                <li style="padding-top:30px">
+                    <label for="id_account_type">Business Type</label>
+                    <div class="Right">
+                        <div class="FancySelect"><div class="current"><span class="CurrentSelection">Choose a business type...</span><span class="DownArrow"></span></div><div class="FancySelectList"><div class="wrapper"><ul><li data=""><span style="font-weight: normal; color: grey;" class="primaryText">Choose a business type...</span></li><li data="professional"><span class="primaryText">Professional</span> <span class="subtext">(e.g., photographer, blogger, designer)</span></li><li data="public_figure"><span class="primaryText">Public Figure</span> <span class="subtext">(e.g., politician, athlete, musician, actor)</span></li><li data="media"><span class="primaryText">Media</span> <span class="subtext">(e.g., magazine, newspaper, tv news)</span></li><li data="brand"><span class="primaryText">Brand</span> <span class="subtext">(e.g., Coca-cola, SF 49ers, Grey Poupon)</span></li><li data="retailer"><span class="primaryText">Retailer</span> <span class="subtext">(e.g., Anthropologie, Pottery Barn)</span></li><li data="online_marketplace"><span class="primaryText">Online Marketplace</span> <span class="subtext">(e.g., Etsy, Amazon)</span></li><li data="local_business"><span class="primaryText">Local Business</span> <span class="subtext">(e.g., restaurant, boutique)</span></li><li data="institution_or_non_prof"><span class="primaryText">Institution/Non-profit</span> <span class="subtext">(e.g., Smithsonian, MoMa)</span></li><li data="other"><span class="primaryText">Other</span> <span class="subtext">None</span></li></ul></div></div></div><select style="display: none;" id="id_account_type" name="account_type">
+<option value="" selected="selected">Choose a business type...</option>
+<option value="professional">Professional#(e.g., photographer, blogger, designer)</option>
+<option value="public_figure">Public Figure#(e.g., politician, athlete, musician, actor)</option>
+<option value="media">Media#(e.g., magazine, newspaper, tv news)</option>
+<option value="brand">Brand#(e.g., Coca-cola, SF 49ers, Grey Poupon)</option>
+<option value="retailer">Retailer#(e.g., Anthropologie, Pottery Barn)</option>
+<option value="online_marketplace">Online Marketplace#(e.g., Etsy, Amazon)</option>
+<option value="local_business">Local Business#(e.g., restaurant, boutique)</option>
+<option value="institution_or_non_prof">Institution/Non-profit#(e.g., Smithsonian, MoMa)</option>
+<option value="other">Other#None</option>
+</select>
+                        <span class="help_text">Can be changed later</span>
+                        <span class="error"></span>
+                    </div>
+                </li>
+
+                                                    <li id="first_name" class="required BoardError" data-error="Please enter the contact first name">
+                        <label for="PartnerContactName">Contact Name</label>
+                        <div class="Right">
+                            <div id="PartnerContactName">
+                                <input autocorrect="off" id="id_first_name" maxlength="80" name="first_name" placeholder="First Name" type="text">
+                                <input autocorrect="off" id="id_last_name" maxlength="80" name="last_name" placeholder="Last Name" type="text">
+                            </div>
+                            <span class="help_text">Person managing your account</span>
+                            <span class="error">Please enter the contact first name</span>
+                        </div>
+                    </li>
+                
+                                <li id="email" class="required BoardError">
+                    <label for="id_email">Email Address</label>
+                    <div class="Right">
+                        <input value="lgj1029@126.com" autocapitalize="off" autocorrect="off" id="id_email" maxlength="100" name="email" placeholder="Email Address" type="text">
+                        <span class="help_text"></span>
+                        <span class="error">Sorry, this email already has an account.</span>
+                    </div>
+                </li>
+
+                                                    <li id="password" class="required">
+                        <label for="id_password">Password</label>
+                        <div class="Right">
+                            <input autocorrect="off" id="id_password" name="password" placeholder="Password" type="password">
+                            <span class="help_text">6 characters minimum</span>
+                            <span class="error"></span>
+                        </div>
+                    </li>
+                            </ul>
+
+            <h4><span class="SectionHeading">Profile Info</span> <span class="SectionSubheading">(shown publicly)</span></h4>            <ul class="ControlGroups intermediate clearfix">
+                                <li id="business_name" class="required BoardError" data-error="Please enter your business name">
+                    <label for="id_business_name">Business Name</label>
+                    <div class="Right">
+                        <input autocorrect="off" id="id_business_name" maxlength="100" name="business_name" placeholder="Enter your business name" type="text">
+                        <span class="help_text">How you will appear on Pinterest</span>
+                        <span class="error">Please enter your business name</span>
+                    </div>
+                </li>
+
+                                <li id="username" class="required" data-validation-short="Please use at least 3 characters" data-validation-long="Please use less than 15 characters">
+                    <label for="id_username">Username</label>
+                    <div class="Right">
+                        <span id="PinterestBaseUrl">http://pinterest.com/ </span><input autocapitalize="off" autocorrect="off" id="id_username" maxlength="15" name="username" placeholder="Username" type="text">
+                        <span class="help_text username_available"></span>
+                        <span class="error"></span>
+                    </div>
+                </li>
+
+                                                <li id="CompletePhoto">
+                    <label for="id_img">Profile Image</label>
+                    <div class="Right">
+                        <div class="current_avatar_wrapper">
+                            <img class="current_avatar floatLeft" src="image/your_logo_here.png" alt="Photo of Account Creator">
+                        </div>
+                        <div class="floatLeft NoInput" style="padding-left: 12px;">
+                            <label for="id_img" style="padding-left: 10px; padding-right: 10px;" class="Button WhiteButton Button13 ContrastButton upload" data-text-uploading="Uploading…">Upload Image</label><input id="id_img" name="img" type="file">
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="hidden" id="profile_img">
+                    <input id="id_user_image_url" name="user_image_url" value="https://s-passets-ec.pinimg.com/images/registration/your_logo_here.png" type="hidden">
+                </li>
+
+                                <li>
+                    <label for="id_about">About</label>
+                    <div class="Right">
+                        <textarea cols="40" id="id_about" name="about" placeholder="Enter a description for your profile" rows="10"></textarea>
+                        <span style="float: none;" class="help_text" id="aboutCount"></span>
+                        <span class="error"></span>
+                    </div>
+                </li>
+
+                                <li>
+                    <label for="id_website">Website</label>
+                    <div class="Right">
+                        <input value="为" autocorrect="off" id="id_website" maxlength="80" name="website" placeholder="Enter your website address" type="text">
+                        <span class="help_text">ex: http://yourwebsite.com</span>
+                        <span class="error"></span>
+                    </div>
+                </li>
+            </ul>
+
+            <h4><span class="SectionHeading">Agreement</span></h4>            <ul class="ControlGroups">
+                <li class="required">
+                    <div>
+                        <label>Terms of Service</label>
+                        <div class="Right">
+                            <div class="ScrollingLegalText LegalText" id="LegalTerms" style="height: 20em;"><div class="entry">
+    <div class="contentWidth tos">
+        <h2 style="font-weight:500;">Thank you for using Pinterest!</h2>
+        <p style="margin-left:20px;">Pinterest’s products and services 
+are provided by Pinterest, Inc. These Business Terms of Service 
+(“Business Terms”) govern your access to and use of Pinterest’s website,
+ products, and services (“Products”) for commercial purposes. Please 
+read these Terms carefully, and&nbsp;<a href="https://help.pinterest.com/anonymous_requests/new" target="_blank">contact us</a>&nbsp;if
+ you have any questions. By creating a Commercial Account, or by 
+accessing or using our Products, you agree to be bound by these Terms 
+and by our&nbsp;<a href="http://www.pinterest.com/_/_/about/privacy/" target="_blank">Privacy Policy</a>.</p>
+        <h2 id="using">1. Using Pinterest</h2>
+        <h4><em>a. Who can use Pinterest.</em></h4>
+        <p>You may use our Products only if you can form a binding 
+contract with Pinterest, and only in compliance with these Terms and all
+ applicable laws. When you create your Pinterest account, you must 
+provide us with accurate and complete information. Any use or access by 
+anyone under the age of 13 is prohibited. If you open an account on 
+behalf of a company, organization, or other entity, then (a) “you” 
+includes you and that entity, and (b) you represent and warrant that you
+ are authorized to grant all permissions and licenses provided in these 
+Terms and bind the entity to these Terms, and that you agree to these 
+Terms on the entity’s behalf. Some of our Products may be software that 
+is downloaded to your computer, phone, tablet, or other device. You 
+agree that we may automatically upgrade those Products, and these Terms 
+will apply to such upgrades.</p>
+        <h4><em>b. Our license to you.</em></h4>
+        <p>Subject to these Terms and our policies (including 
+our&nbsp;Acceptable Usage Policy), we grant you a limited, 
+non-exclusive, non-transferable, and revocable license to use our 
+Products.</p>
+        <h2 id="content">2. Your Content</h2>
+        <h4><em>a. Posting content.</em></h4>
+        <p>Pinterest allows you to post content, including photos, 
+comments, and other materials. Anything that you post or otherwise make 
+available on our Products is referred to as “User Content.” You retain 
+all rights in, and are solely responsible for, the User Content you post
+ to Pinterest.</p>
+        <h4><em>b. How Pinterest and other users can use your content.</em></h4>
+        <p>You grant Pinterest and its users a non-exclusive, 
+royalty-free, transferable, sublicensable, worldwide license to use, 
+store, display, reproduce, re-pin, modify, create derivative works, 
+perform, and distribute your User Content on Pinterest solely for the 
+purposes of operating, developing, providing, and using the Products. 
+Nothing in these Terms shall restrict other legal rights Pinterest may 
+have to User Content, for example under other licenses. We reserve the 
+right to remove or modify User Content for any reason, including User 
+Content that we believe violates these Terms or our policies.</p>
+        <h4><em>c. How long we keep your content:</em></h4>
+        <p>Following termination or deactivation of your account, or if 
+you remove any User Content from Pinterest, we may retain your User 
+Content for a commercially reasonable period of time for backup, 
+archival, or audit purposes. Furthermore, Pinterest and its users may 
+retain and continue to use, store, display, reproduce, re-pin, modify, 
+create derivative works, perform, and distribute any of your User 
+Content that other users have stored or shared through Pinterest.</p>
+        <h4><em>d. Your responsibility for your content:</em></h4>
+        <p><em>i. To Pinterest and our community.</em>&nbsp;Pinterest 
+provides a creative and positive place for you and other users to 
+discover and share things you love. To keep it that way, you must abide 
+by our&nbsp;<a href="http://www.pinterest.com/_/_/about/basics/#etiquette" target="_blank">Pin Etiquette</a> and comply with our policies, including our&nbsp;<a href="http://www.pinterest.com/_/_/about/use/" target="_blank">Acceptable Use Policy</a>.
+ Except as expressly provided in these Terms, you agree not to use, 
+modify, reproduce, distribute, sell, license, or otherwise use our 
+Products without our permission.</p>
+        <p><em>ii. To third parties.</em>&nbsp;Pinterest respects the 
+rights of third party creators and content owners, and expects you to do
+ the same. You therefore agree that any User Content that you post to 
+Pinterest does not and will not violate any law or infringe the rights 
+of any third party.</p>
+        <h4><em>e.  Feedback you provide:</em></h4>
+        <p>We value hearing from our users, and are always interested in
+ learning about ways we can make Pinterest more awesome. If you choose 
+to submit comments, ideas or feedback, you agree that we are free to use
+ them without any restriction or compensation to you. By accepting your 
+submission, Pinterest does not waive any rights to use similar or 
+related Feedback previously known to Pinterest, or developed by its 
+employees, or obtained from sources other than you.</p>
+        <h2 id="tools">3. Tools for Site Owners</h2>
+        <h4><em>a. Site Features.</em></h4>
+        <p>We offer products that web sites and developers can use to 
+offer Pinterest features and functionality to their users (e.g., the 
+“Pin It” and “Follow” buttons) (“Site Features”). You agree to use Site 
+Features only as documented by Pinterest, and in compliance with our 
+policies and branding guidelines. You may not place Site Features on a 
+site or service with content that would violate these Terms if displayed
+ on our Products. You also agree that the Pinterest features and 
+functionality provided by our Site Features will be provided solely by 
+our Site Features, except as otherwise authorized by Pinterest.</p>
+        <h4><em>b. Permissions.</em></h4>
+        <p><em>i. By incorporating Site Features into your site or 
+service, you agree that Pinterest may collect and use information from 
+you and your users as described in our Privacy Policy.</em>  You also 
+agree that Pinterest may use automated methods to analyze your site or 
+service where Site Features have been incorporated.</p>
+        <p><em>ii. Some Site Features allow you or your users to post or otherwise make available content in our Products.</em>
+ By using these Site Features you give Pinterest and its users 
+permission to such content as set forth in Section 2(b).  Nothing in 
+this Section shall restrict other legal rights Pinterest may have to the
+ content.</p>
+        <h2 id="copyright">4. Copyright Policy</h2>
+        <p>Pinterest has adopted and implemented the 
+Pinterest&nbsp;Copyright Policy&nbsp;in accordance with the Digital 
+Millennium Copyright Act. For more information, please read our&nbsp;<a href="http://www.pinterest.com/_/_/about/copyright/" target="_blank">Copyright Policy</a>.</p>
+        <h2 id="security">5. Security</h2>
+        <p>We care about the security of our users. While we work to 
+protect the security of your content and account, Pinterest cannot 
+guarantee that unauthorized third parties will not be able to defeat our
+ security measures. Please notify us immediately of any compromise or 
+unauthorized use of your account. For accounts created on behalf of a 
+company, organization, or other entity, you are responsible for ensuring
+ that only authorized individuals have access to the account.</p>
+        <h2 id="thirdparty">6. Third-party Links, Sites and Services</h2>
+        <p>Our Products may contain links to third-party websites, 
+advertisers, services, special offers, or other events or activities 
+that are not owned or controlled by Pinterest. We do not endorse or 
+assume any responsibility for any such third-party sites, information, 
+materials, products, or services. If you access any third party website,
+ service, or content from Pinterest, you do so at your own risk and you 
+agree that Pinterest will have no liability arising from your use of or 
+access to any third-party website, service, or content.</p>
+        <h2 id="termination">7. Termination.</h2>
+        <p>Pinterest may terminate or suspend this license at any time, 
+with our without cause or notice to you. Upon termination, you continue 
+to be bound by Sections 2, 3(b), and 7-13 of these Terms.</p>
+        <h2 id="indemnity">8. Indemnity</h2>
+        <p>You agree to indemnify and hold harmless Pinterest and its 
+officers, directors, employees and agents, from and against any claims, 
+suits, proceedings, disputes, demands, liabilities, damages, losses, 
+costs and expenses, including, without limitation, reasonable legal and 
+accounting fees (including costs of defense of claims, suits or 
+proceedings brought by third parties), in any way related to (a) your 
+access to or use of our Products, (b) your User Content, or (c) your 
+breach of any of these Terms.</p>
+        <h2 id="disclaimers">9. Disclaimers</h2>
+        <p>The Products and all included content are provided on an “as is” basis without warranty of any kind, whether express or implied.</p>
+        <p>PINTEREST SPECIFICALLY DISCLAIMS ANY AND ALL WARRANTIES AND 
+CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND 
+NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR
+ USAGE OF TRADE.</p>
+        <p>Pinterest takes no responsibility and assumes no liability 
+for any User Content that you or any other user or third party posts or 
+transmits using our Products. You understand and agree that you may be 
+exposed to User Content that is inaccurate, objectionable, inappropriate
+ for children, or otherwise unsuited to your purpose.</p>
+        <h2 id="liability">10. Limitation of Liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, PINTEREST SHALL NOT 
+BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR 
+PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED 
+DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOOD-WILL, OR OTHER 
+INTANGIBLE LOSSES, RESULTING FROM (A) YOUR ACCESS TO OR USE OF OR 
+INABILITY TO ACCESS OR USE THE PRODUCTS; (B) ANY CONDUCT OR CONTENT OF 
+ANY THIRD PARTY ON THE PRODUCTS, INCLUDING WITHOUT LIMITATION, ANY 
+DEFAMATORY, OFFENSIVE OR ILLEGAL CONDUCT OF OTHER USERS OR THIRD 
+PARTIES; OR (C) UNAUTHORIZED ACCESS, USE OR ALTERATION OF YOUR 
+TRANSMISSIONS OR CONTENT. IN NO EVENT SHALL PINTEREST’S AGGREGATE 
+LIABILITY FOR ALL CLAIMS RELATED TO THE PRODUCTS EXCEED THE GREATER OF 
+ONE HUNDRED U.S. DOLLARS (U.S. $100.00) OR THE AMOUNTS PAID BY YOU TO 
+PINTEREST FOR THE PAST THREE MONTHS FOR THE PRODUCTS.</p>
+        <h2 id="arbitration">11. Arbitration</h2>
+        <p>For any dispute you have with Pinterest, you agree to first&nbsp;<a href="https://help.pinterest.com/anonymous_requests/new" target="_blank">contact us</a>&nbsp;and
+ attempt to resolve the dispute with us informally. If Pinterest has not
+ been able to resolve the dispute with you informally, we each agree to 
+resolve any claim, dispute, or controversy (excluding claims for 
+injunctive or other equitable relief) arising out of or in connection 
+with or relating to these Terms by binding arbitration by the American 
+Arbitration Association (“AAA”) under the Commercial Arbitration Rules 
+and Supplementary Procedures for Consumer Related Disputes then in 
+effect for the AAA, except as provided herein. Unless you and Pinterest 
+agree otherwise, the arbitration will be conducted in the county where 
+you reside. Each party will be responsible for paying any AAA filing, 
+administrative and arbitrator fees in accordance with AAA rules, except 
+that Pinterest will pay for your reasonable filing, administrative, and 
+arbitrator fees if your claim for damages does not exceed $75,000 and is
+ non-frivolous (as measured by the standards set forth in Federal Rule 
+of Civil Procedure 11(b)). The award rendered by the arbitrator shall 
+include costs of arbitration, reasonable attorneys’ fees and reasonable 
+costs for expert and other witnesses, and any judgment on the award 
+rendered by the arbitrator may be entered in any court of competent 
+jurisdiction. Nothing in this Section shall prevent either party from 
+seeking injunctive or other equitable relief from the courts for matters
+ related to data security, intellectual property or unauthorized access 
+to the Service. ALL CLAIMS MUST BE BROUGHT IN THE PARTIES’ INDIVIDUAL 
+CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS 
+OR REPRESENTATIVE PROCEEDING, AND, UNLESS WE AGREE OTHERWISE, THE 
+ARBITRATOR MAY NOT CONSOLIDATE MORE THAN ONE PERSON’S CLAIMS. YOU AGREE 
+THAT, BY ENTERING INTO THESE TERMS, YOU AND PINTEREST ARE EACH WAIVING 
+THE RIGHT TO A TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION.</p>
+        <h2 id="jurisdiction">12. Governing Law and Jurisdiction</h2>
+        <p>These Terms shall be governed by the laws of the State of 
+California, without respect to its conflict of laws principles. We each 
+agree to submit to the personal jurisdiction of a state court located in
+ Santa Clara County, California or the United States District Court for 
+the Northern District of California, for any actions not subject to 
+Section 11 (Arbitration).</p>
+        <p>Our Products are controlled and operated from the United 
+States, and we make no representations that they are appropriate or 
+available for use in other locations.</p>
+        <h2 id="general">13. General Terms</h2>
+        <p><em>Notification Procedures and changes to these Terms.</em>&nbsp;
+ Pinterest reserves the right to determine the form and means of 
+providing notifications to you, and you agree to receive legal notices 
+electronically if we so choose. We may revise these Terms from time to 
+time and the most current version will always be posted on our website. 
+If a revision, in our sole discretion, is material we will notify you. 
+By continuing to access or use the Products after revisions become 
+effective, you agree to be bound by the revised Terms. If you do not 
+agree to the new terms, please stop using the Products.</p>
+        <p><em>Assignment.</em>&nbsp;These Terms, and any rights and 
+licenses granted hereunder, may not be transferred or assigned by you, 
+but may be assigned by Pinterest without restriction. Any attempted 
+transfer or assignment in violation hereof shall be null and void.</p>
+        <p><em>Entire Agreement/Severability.</em>&nbsp;These Terms, 
+together with the Privacy Policy and any amendments and any additional 
+agreements you may enter into with Pinterest in connection with the 
+Products, shall constitute the entire agreement between you and 
+Pinterest concerning the Products and supersede any prior terms you have
+ with Pinterest regarding the Products. If any provision of these Terms 
+is deemed invalid, then that provision will be limited or eliminated to 
+the minimum extent necessary, and the remaining provisions of these 
+Terms will remain in full force and effect.</p>
+        <p><em>No Waiver.</em>&nbsp;No waiver of any term of these Terms
+ shall be deemed a further or continuing waiver of such term or any 
+other term, and Pinterest’s failure to assert any right or provision 
+under these Terms shall not constitute a waiver of such right or 
+provision.</p>
+        <p><em>U.S. Government Agencies:</em> If you are a United States federal government agency, <a href="https://help.pinterest.com/entries/22787291" target="_blank">this amendment</a> applies to these Terms.</p>
+    </div>
+
+</div></div>
+                            <a href="https://www.pinterest.com/business/tos/" class="PrintIcon LegalTermsPrintIcon" target="_new">Print</a>
+                        </div>
+                    </div>
+                    <div>
+                        <label style="margin-top:-3px">Accept Terms</label>
+                        <div class="Right">
+                                                        <label class="LegalTerms" id="LegalTermsAccept">
+                                <input checked="checked" id="id_accept_legal" name="accept_legal" type="checkbox">
+                                I agree to the Business Terms of Service and
+                                <a href="http://www.pinterest.com/_/_/about/privacy/" target="_new" style="font-weight: 500; color: #8C7E7E;"> Privacy Policy</a>
+                            </label>
+                            <span class="error"></span>
+                        </div>
+                    </div>
+                </li>
+                                <!-- Captcha for medium risk users -->
+                            </ul>
+
+            <input id="id_registration_type" name="registration_type" value="partner" type="hidden">
+
+            <!-- Button -->
+            <div class="Submit">
+                <button id="submitButton" class="Button RedButton Button24 userform_submit editpage_submit disabled" type="submit">
+                                            Create Account
+                                    </button>
+            </div>
+            <div style="display:none"><input name="csrfmiddlewaretoken" value="KsjlRL9fSMV9i14iePf9XP7ZoFjhprl4" data-bd="5EFV3NPVG8TFGY4Y5OYCMA84ODESGJUOF" type="hidden"></div>        </form>
+
+    </div><!-- .FixedContainer -->
+    <div id="SearchAutocompleteHolder"></div>
+    <button id="ScrollToTop" class="Button WhiteButton Indicator" type="button">
+    Scroll to Top
+</button>            <script type="text/javascript">
+$(document).ready(function() {
+        if (top != self) {
+        $('body').html('<h1>Unauthorized</h1>')
+    }
+});
+</script>                <script type="text/javascript">
+
+    function filtered_gaq_push_pageview() {
+        cur_url = document.URL;
+
+       if (!cur_url.match(/email=/)) {
+            _gaq.push(['_trackPageview']);
+        }
+    }
+
+    function trackGAEvent(category, action, label, value) {
+    _gaq = _gaq || []
+
+
+        // Event
+    _gaq.push(['_trackEvent', category, action, label, value]);
+
+    // Virtual Page
+        virtual_page = '_event_';
+    virtual_page += "/" + category;
+
+    if(!action) action = '_';
+        virtual_page+="/" + action;
+    if(label) virtual_page+= "/" + label;
+
+    _gaq.push(['_trackPageview', virtual_page]);
+
+            }
+
+    var _gaq = _gaq || [];
+    
+                
+
+    _gaq.push(['_setAccount', 'UA-12967896-1']);
+    _gaq.push(['_setCustomVar', 1, 'is_logged_in', 'logged out', 2]);
+    _gaq.push(['_setCustomVar', 2, 'page_name', 'partner_register', 1]);
+
+    
+                filtered_gaq_push_pageview();
+    
+    (function() {
+      var ga = document.createElement('script'); ga.type='text/javascript'; ga.async=true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+    })();
+
+</script>
+
+    <script type="text/javascript">
+    var autoLoginFbook = function(response) {
+        if (response.status !== 'connected') {
+            return;
+        }
+        var uid = response.authResponse.userID;
+        var accessToken = response.authResponse.accessToken;
+        $.post("/login/facebook/", {
+            access_token: accessToken,
+            fb_id: uid},
+            function(resp) {
+                if (resp.status === "success") {
+                    window.location.reload()
+                }
+            });
+    };
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: 274266067164,
+            cookie: true
+        });
+        FB.getLoginStatus(autoLoginFbook);
+    };
+    (function() {
+        var e = document.createElement('script');
+        e.async = true;
+        e.src = document.location.protocol +
+        '//connect.facebook.net/en_US/all.js';
+        var scriptTag = document.getElementsByTagName('script')[0];
+        scriptTag.parentNode.appendChild(e);
+    } ());
+</script>
+
+    <div id="ErrorDialog" class="ModalContainer alertBox">
+    <div class="modal">
+        <div class="closeBtn closeButton">&nbsp;</div>
+        <div class="message"></div>
+        <div class="footer">
+          <button class="Button RedButton Button18 closeButton" type="button">Close</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</div>
+
+<div id="ConfirmationDialog" class="ModalContainer alertBox">
+    <div class="modal">
+        <div class="closeBtn closeButton">&nbsp;</div>
+        <h2>Confirmation</h2>
+        <div class="message"></div>
+        <div class="footer">
+          <button class="Button RedButton Button18 okButton confOkButton" type="button">Ok</button>
+          <button class="Button RedButton Button18 okButton confOkButton2 hidden" type="button"></button>
+          <button class="Button WhiteButton Button18 closeButton confCloseButton" type="button">Cancel</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</div>
+
+</body></html>
