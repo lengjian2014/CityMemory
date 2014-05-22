@@ -1,0 +1,8 @@
+.gr .gu h3 { padding: 5px 0 0 0; }
+.gr .gu h4 { margin: 0 0 15px 0; font-size: 20px; line-height: 24px; }
+.gr .gu h4.top { color: #cb2027; }
+.gr .gu h2 { padding: 0; }
+.gr .gu h2, .gr .gu h3 { text-align: left; }
+.gr .gu p { margin-bottom: 20px; }
+.gr .gu ol { margin-top: -15px; }
+.gr .gu ol li { margin: 5px 0; font-size: 16px; line-height: 24px; }

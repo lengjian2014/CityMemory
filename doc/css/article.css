@@ -1,0 +1,23 @@
+.gr .gu h4 { margin: 0 0 15px 0; }
+.gr .gu h4.top { color: #cb2027; }
+.gr .gu h2 { padding: 0; }
+.gr .gu h2, .gr .gu h3 { text-align: left; }
+.gr .gu p.caption { margin-top: 10px; font-size: 14px; line-height: 20px; }
+.gr .gu a.button.cta { margin: 20px 0 0 0; max-width: 250px; }
+.gr .gu select, .gr .gu option, .gr .gu input[type=text], .gr .gu input[type=url], .gr .gu input[type=number] { height: 32px; line-height: 32px; font-size: 16px; vertical-align: middle; width: 100%; margin-bottom: 10px; }
+.gr .gu textarea { width: 100%; height: 100px; }
+.gr .gu select[multiple] { height: auto; }
+.gr .gu ul { margin-top: 5px; }
+.gr .gu ul li { font-size: 14px; line-height: 18px; position: relative; }
+.gr .gu ul li:before { color: #AAAAAA; content: "\00B7"; left: -10px; position: absolute; top: 0; }
+.gr .gu ol { margin-top: -10px; }
+.gr .gu ol li { font-size: 16px; margin: 5px 0; line-height: 24px; }
+.gr .gu cite.download { text-align: center; line-height: 50px; }
+.gr .gu cite.download a { color: #595A4B; }
+.gr .gu cite.download a:hover { color: #cb2027; }
+
+form label { font-family: "Adelle Sans Regular", sans-serif; margin-top: 10px; font-size: 16px; line-height: 22px; }
+form input { border: 2px solid #E4E4E4; border-radius: 2px; }
+form a.dim { color: #A0A0A0; line-height: 35px; font-size: 14px; }
+
+hr { color: #F4F4F4; background-color: #F4F4F4; height: 2px; }

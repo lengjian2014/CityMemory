@@ -1,0 +1,8 @@
+.gr .gu.caseBlock .gu h2 { padding: 0; }
+.gr .gu.caseBlock .gu h3 { padding: 5px 0 0 0; }
+.gr .gu.caseBlock .gu h2, .gr .gu.caseBlock .gu h3 { text-align: left; }
+.gr .gu.caseBlock .gu h4 { margin: 5px 0 3px 0; font-size: 16px; line-height: 20px; }
+.gr .gu.caseBlock .gu a.img { display: block; height: 96px; width: 220px; background: #eeeeee url() 0 0 no-repeat; }
+.gr .gu.caseBlock .gu p { margin-bottom: 30px; padding-right: 20px; }
+
+section { padding-bottom: 50px; }

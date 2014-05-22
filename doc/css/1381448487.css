@@ -1,0 +1,41 @@
+#header, #user_chat h1 {
+  background: #FAF8F8;
+}
+
+html, body {
+  background: #FAF8F8;
+}
+
+body#chat_window {
+  background: inherit;
+}
+
+input:focus, textarea:focus, select:focus,
+input.combobox:focus + input.combobox-button {
+  border-color: #FAF8F8;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 4px #FAF8F8;
+}
+
+ul#green li.main:hover, ul#green li.main.over {
+  background: #FFFEFE;
+}
+
+.header, .header a, #table_header a, #top-right, #top-right a, #top-menu a.tab, #user_chat h1 span, #user_chat #end_session {
+  color: #2A2A2A
+}
+
+#top-menu-background, #top form#topquery {
+  background-color: #CFCECE;
+}
+
+ul.menu-drop, ul.drop-list ul {
+  border-color: #CFCECE;
+}
+
+.side-box-content, .blue_box_top, .blue_box_bottom, .side-box-with-image, .r_blue {
+  background-color: #F6F6F6;
+}
+
+ul#green.agent-tabs li.main, ul#green.agent-tabs li.active:hover, ul#green.agent-tabs li.active.over {
+  border-left: 2px solid #CFCECE;
+}
