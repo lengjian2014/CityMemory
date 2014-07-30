@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Jumbotron Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/docs.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/carousel.css" rel="stylesheet">
+  </head>
+  <body style="background-color: #eee;">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="color:#357ebd;font-size: 21px;"><b>城市记忆</b></a>
+        </div>
+        <div class="collapse navbar-collapse">
+        	<ul class="nav navbar-nav">
+	            <li class="active"><a href="#"><span class="glyphicon glyphicon-home">Home</span></a></li>
+	            <li><a href="#shop"><span class="glyphicon glyphicon-shopping-cart">Shop</span></a></li>
+	            <li><a href="#support"><span class="glyphicon glyphicon-headphones">Support</span></a></li>
+          	</ul>
+          	<form class="navbar-form navbar-right" role="search">
+	          	<div class="input-group">
+	               <span class="input-group-btn">
+	                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-list"></span></button>
+	               </span>
+	               <input type="text" class="form-control" placeholder="Search">
+	            </div>
+	          	<button type="button" class="btn btn-primary">
+	  				<span class="glyphicon glyphicon-list"></span>
+				</button>
+	            <div class="input-group">
+	            	<span class="input-group-addon glyphicon glyphicon-list"></a></span>
+	              	<input type="text" class="form-control" placeholder="Search">
+	            </div>
+	            <button type="submit" class="btn btn-success">登录</button>
+	            <button type="submit" class="btn btn-success">注册</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom: 0;">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/1.jpeg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/2.jpeg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/3.jpeg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+    
+<div class="container">
+	<div class="row" style="padding: 20px  0;">
+          <div class="col-sm-9 col-md-10" style="width: 81.3333%;">
+          		<ul id="myTab" class="nav nav-tabs"  style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin-bottom: 20px;">
+				   <li class="active">
+				      <a href="#home" data-toggle="tab">
+				         W3Cschool Home
+				      </a>
+				   </li>
+				   <li><a href="#ios" data-toggle="tab">iOS</a></li>
+				   <li class="dropdown">
+				      <a href="#" id="myTabDrop1" class="dropdown-toggle" 
+				         data-toggle="dropdown">Java 
+				         <b class="caret"></b>
+				      </a>
+				      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+				         <li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>
+				         <li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>
+				      </ul>
+				   </li>
+				   <p style="float:right;padding:10px 10px 0px 10px;">
+				      <a href="">
+				         <span style=" font-size: 13px;">更多...</span>
+				      </a>
+				   </p>
+				</ul>
+				<div id="myTabContent" class="tab-content">
+				   <div class="tab-pane fade in active" id="home">
+				      <div class="row">
+				      <div class="col-sm-6 col-md-3" style="margin-bottom: 20px;">
+					        <div class="thumbnail" style="padding: 0;border-radius: 6px 6px 0 0;margin-bottom: 0;">
+					          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" alt="Generic placeholder thumbnail">
+					        </div>
+					        <div style="height:130px;word-break:break-all;background: none repeat scroll 0 0 #fff;">
+					           <p class="text-muted" style="padding:2px 7px;margin: 0;">手套</p>
+					           <p class="text-muted" style="padding:2px 7px;">N2ZyB4bWxucz0iaHR0cDovL3d3dy53</p>
+					          	<div style="border-top: 1px solid #e7e7e7;padding:7px 7px;">
+										<a title="More from MyHandsomeHome" href="/ekcpics/myhandsomehome/">
+											<img style="fload:left;vertical-align:baseline;" src="http://media-cache-ec0.pinimg.com/avatars/ekcpics_1402367552_30.jpg">
+											<div style="fload:left;display: inline-block;">
+												<div style="font-size: 12px;">Elissandra</div>
+												<div style="font-size: 12px;"> MyHandsomeHome </div>
+											</div>
+										</a>
+								</div>
+					       </div>
+		      		  </div>
+							<div class="col-sm-6 col-md-3" style="margin-bottom: 20px;">
+						        <div class="thumbnail" style="padding: 0;border-radius: 6px 6px 0 0;margin-bottom: 0;">
+						          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" alt="Generic placeholder thumbnail">
+						        </div>
+						        <div style="height:130px;word-break:break-all;background: none repeat scroll 0 0 #fff;">
+						           <p class="text-muted" style="padding:2px 7px;margin: 0;">手套</p>
+						           <p class="text-muted" style="padding:2px 7px;">N2ZyB4bWxucz0iaHR0cDovL3d3dy53</p>
+						          	<div style="border-top: 1px solid #e7e7e7;padding:7px 7px;">
+											<a title="More from MyHandsomeHome" href="/ekcpics/myhandsomehome/">
+												<img style="fload:left;vertical-align:baseline;" src="http://media-cache-ec0.pinimg.com/avatars/ekcpics_1402367552_30.jpg">
+												<div style="fload:left;display: inline-block;">
+													<div style="font-size: 12px;">Elissandra</div>
+													<div style="font-size: 12px;"> MyHandsomeHome </div>
+												</div>
+											</a>
+									</div>
+						       </div>
+			      		  </div>
+							<div class="col-sm-6 col-md-3" style="margin-bottom: 20px;">
+						        <div class="thumbnail" style="padding: 0;border-radius: 6px 6px 0 0;margin-bottom: 0;">
+						          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" alt="Generic placeholder thumbnail">
+						        </div>
+						        <div style="height:130px;word-break:break-all;background: none repeat scroll 0 0 #fff;">
+						           <p class="text-muted" style="padding:2px 7px;margin: 0;">手套</p>
+						           <p class="text-muted" style="padding:2px 7px;">N2ZyB4bWxucz0iaHR0cDovL3d3dy53</p>
+						          	<div style="border-top: 1px solid #e7e7e7;padding:7px 7px;">
+											<a title="More from MyHandsomeHome" href="/ekcpics/myhandsomehome/">
+												<img style="fload:left;vertical-align:baseline;" src="http://media-cache-ec0.pinimg.com/avatars/ekcpics_1402367552_30.jpg">
+												<div style="fload:left;display: inline-block;">
+													<div style="font-size: 12px;">Elissandra</div>
+													<div style="font-size: 12px;"> MyHandsomeHome </div>
+												</div>
+											</a>
+									</div>
+						       </div>
+			      		  </div>
+						<div class="col-sm-6 col-md-3" style="margin-bottom: 20px;">
+						        <div class="thumbnail" style="padding: 0;border-radius: 6px 6px 0 0;margin-bottom: 0;">
+						          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" alt="Generic placeholder thumbnail">
+						        </div>
+						        <div style="height:130px;word-break:break-all;background: none repeat scroll 0 0 #fff;">
+						           <p class="text-muted" style="padding:2px 7px;margin: 0;">手套</p>
+						           <p class="text-muted" style="padding:2px 7px;">N2ZyB4bWxucz0iaHR0cDovL3d3dy53</p>
+						          	<div style="border-top: 1px solid #e7e7e7;padding:7px 7px;">
+											<a title="More from MyHandsomeHome" href="/ekcpics/myhandsomehome/">
+												<img style="fload:left;vertical-align:baseline;" src="http://media-cache-ec0.pinimg.com/avatars/ekcpics_1402367552_30.jpg">
+												<div style="fload:left;display: inline-block;">
+													<div style="font-size: 12px;">Elissandra</div>
+													<div style="font-size: 12px;"> MyHandsomeHome </div>
+												</div>
+											</a>
+									</div>
+						       </div>
+			      		  </div>
+				   </div>
+				   </div>
+				   <div class="tab-pane fade" id="ios">
+				      <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple 
+				      TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+				   </div>
+				   <div class="tab-pane fade" id="jmeter">
+				      <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+				   </div>
+				   <div class="tab-pane fade" id="ejb">
+				      <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
+				      </p>
+				   </div>
+				
+          </div>
+          <ul id="myTab" class="nav nav-tabs"  style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin-bottom: 20px;">
+				   <li class="active">
+				      <a href="#home1" data-toggle="tab">
+				         W3Cschool Home
+				      </a>
+				   </li>
+				   <li><a href="#ios1" data-toggle="tab">iOS</a></li>
+				   <li class="dropdown">
+				      <a href="#" id="myTabDrop1" class="dropdown-toggle" 
+				         data-toggle="dropdown">Java 
+				         <b class="caret"></b>
+				      </a>
+				      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+				         <li><a href="#jmeter1" tabindex="-1" data-toggle="tab">jmeter</a></li>
+				         <li><a href="#ejb1" tabindex="-1" data-toggle="tab">ejb</a></li>
+				      </ul>
+				   </li>
+				</ul>
+				<div id="myTabContent" class="tab-content">
+				   <div class="tab-pane fade in active" id="home1">
+				      <div class="row">
+				      <div class="col-sm-6 col-md-3" style="margin-bottom: 20px;">
+					        <div class="thumbnail" style="padding: 0;border-radius: 6px 6px 0 0;margin-bottom: 0;">
+					          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" alt="Generic placeholder thumbnail">
+					        </div>
+					        <div style="height:130px;word-break:break-all;background: none repeat scroll 0 0 #fff;">
+					           <p class="text-muted" style="padding:2px 7px;margin: 0;">手套</p>
+					           <p class="text-muted" style="padding:2px 7px;">N2ZyB4bWxucz0iaHR0cDovL3d3dy53</p>
+					          	<div style="border-top: 1px solid #e7e7e7;padding:7px 7px;">
+										<a title="More from MyHandsomeHome" href="/ekcpics/myhandsomehome/">
+											<img style="fload:left;vertical-align:baseline;" src="http://media-cache-ec0.pinimg.com/avatars/ekcpics_1402367552_30.jpg">
+											<div style="fload:left;display: inline-block;">
+												<div style="font-size: 12px;">Elissandra</div>
+												<div style="font-size: 12px;"> MyHandsomeHome </div>
+											</div>
+										</a>
+								</div>
+					       </div>
+		      		  </div>
+							<div class="col-sm-6 col-md-3" style="margin-bottom: 20px;">
+						        <div class="thumbnail" style="padding: 0;border-radius: 6px 6px 0 0;margin-bottom: 0;">
+						          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" alt="Generic placeholder thumbnail">
+						        </div>
+						        <div style="height:130px;word-break:break-all;background: none repeat scroll 0 0 #fff;">
+						           <p class="text-muted" style="padding:2px 7px;margin: 0;">手套</p>
+						           <p class="text-muted" style="padding:2px 7px;">N2ZyB4bWxucz0iaHR0cDovL3d3dy53</p>
+						          	<div style="border-top: 1px solid #e7e7e7;padding:7px 7px;">
+											<a title="More from MyHandsomeHome" href="/ekcpics/myhandsomehome/">
+												<img style="fload:left;vertical-align:baseline;" src="http://media-cache-ec0.pinimg.com/avatars/ekcpics_1402367552_30.jpg">
+												<div style="fload:left;display: inline-block;">
+													<div style="font-size: 12px;">Elissandra</div>
+													<div style="font-size: 12px;"> MyHandsomeHome </div>
+												</div>
+											</a>
+									</div>
+						       </div>
+			      		  </div>
+							<div class="col-sm-6 col-md-3" style="margin-bottom: 20px;">
+						        <div class="thumbnail" style="padding: 0;border-radius: 6px 6px 0 0;margin-bottom: 0;">
+						          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" alt="Generic placeholder thumbnail">
+						        </div>
+						        <div style="height:130px;word-break:break-all;background: none repeat scroll 0 0 #fff;">
+						           <p class="text-muted" style="padding:2px 7px;margin: 0;">手套</p>
+						           <p class="text-muted" style="padding:2px 7px;">N2ZyB4bWxucz0iaHR0cDovL3d3dy53</p>
+						          	<div style="border-top: 1px solid #e7e7e7;padding:7px 7px;">
+											<a title="More from MyHandsomeHome" href="/ekcpics/myhandsomehome/">
+												<img style="fload:left;vertical-align:baseline;" src="http://media-cache-ec0.pinimg.com/avatars/ekcpics_1402367552_30.jpg">
+												<div style="fload:left;display: inline-block;">
+													<div style="font-size: 12px;">Elissandra</div>
+													<div style="font-size: 12px;"> MyHandsomeHome </div>
+												</div>
+											</a>
+									</div>
+						       </div>
+			      		  </div>
+						<div class="col-sm-6 col-md-3" style="margin-bottom: 20px;">
+						        <div class="thumbnail" style="padding: 0;border-radius: 6px 6px 0 0;margin-bottom: 0;">
+						          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" alt="Generic placeholder thumbnail">
+						        </div>
+						        <div style="height:130px;word-break:break-all;background: none repeat scroll 0 0 #fff;">
+						           <p class="text-muted" style="padding:2px 7px;margin: 0;">手套</p>
+						           <p class="text-muted" style="padding:2px 7px;">N2ZyB4bWxucz0iaHR0cDovL3d3dy53</p>
+						          	<div style="border-top: 1px solid #e7e7e7;padding:7px 7px;">
+											<a title="More from MyHandsomeHome" href="/ekcpics/myhandsomehome/">
+												<img style="fload:left;vertical-align:baseline;" src="http://media-cache-ec0.pinimg.com/avatars/ekcpics_1402367552_30.jpg">
+												<div style="fload:left;display: inline-block;">
+													<div style="font-size: 12px;">Elissandra</div>
+													<div style="font-size: 12px;"> MyHandsomeHome </div>
+												</div>
+											</a>
+									</div>
+						       </div>
+			      		  </div>
+				   </div>
+				   </div>
+				   <div class="tab-pane fade" id="ios1">
+				      <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple 
+				      TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+				   </div>
+				   <div class="tab-pane fade" id="jmeter1">
+				      <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+				   </div>
+				   <div class="tab-pane fade" id="ejb1">
+				      <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
+				      </p>
+				   </div>
+				
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2" style="fload:right;padding-left: 0px;width: 18.6667%;">
+          <div style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin:0;margin-bottom: 20px;">
+  				<div style="padding: 8px 15px;border-bottom: 1px solid #edf0f2;">
+					<p style="margin:0;">热门标签</p>
+				</div>
+				<div style="padding: 8px 15px;background: none repeat scroll 0 0 #fff;">
+					<a>魔兽世界</a>
+					<a>魔兽世界</a>
+					<a>魔兽世界</a>
+					<a>魔兽世界</a>
+					<a>魔兽世界</a>
+					<a>魔兽世界</a>
+				</div>
+	        	</div>
+				<div class="input-group " style="margin-bottom: 20px;">
+		               <span class="input-group-btn">
+		                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-list"></span></button>
+		               </span>
+		               <input type="text" class="form-control" placeholder="Search">
+		         </div>
+		      <div style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin:0;margin-bottom: 20px;">
+  				<div style="padding: 8px 15px;border-bottom: 1px solid #edf0f2;">
+					<p style="margin:0;">新加会员</p>
+				</div>
+				<div style="padding: 8px 15px;background: none repeat scroll 0 0 #fff;">
+					<a><img class="img-circle" style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+					<a><img class="img-circle" style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+					<a><img class="img-circle" style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+					<a><img class="img-circle" style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+					<a><img class="img-circle" style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+					<a><img class="img-circle" style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+					<a><img class="img-circle" style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+					<a><img class="img-circle" style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+					<a><img class="img-circle" style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+					<a><img class="img-circle" style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+					<a><img class="img-circle" style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+					<a><img class="img-circle" style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+				</div>
+	        </div>
+	        <div style="border-radius: 4px;margin-bottom: 20px;">
+	        	<a><img style="height: 100%;width: 100%;border-radius: 6px 6px 0 0;" src="images/4.jpg"></a>
+	        </div>
+	          <ul class="nav nav-sidebar" style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin:0;">
+	            <li>
+	            	<div style="padding: 8px 15px;border-bottom: 1px solid #edf0f2;">
+						<p style="margin:0;">热门标签</p>
+					</div>
+				</li>
+	            <li><a href="/topic/19559450" target="_blank">
+				<img style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg">
+				</a></li>
+	            <li><a href="/topic/19559450" target="_blank">
+				<img style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg">
+				</a></li>
+				<li><a href="/topic/19559450" target="_blank">
+				<img style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg">
+				</a></li>
+				<li><a href="/topic/19559450" target="_blank">
+				<img style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg">
+				</a></li>
+	          </ul>
+        </div>
+    </div>                
+</div>
+<footer class="bs-docs-footer" role="contentinfo" style="background:#909090">
+  <div class="container">
+    <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+    <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+    <p>本项目源码受 <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a> 开源协议保护，文档受 <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> 开源协议保护。</p>
+    <ul class="bs-docs-footer-links muted">
+      <li>当前版本： v3.2.0</li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap">GitHub 仓库</a></li>
+      <li>&middot;</li>
+      <li><a href="../getting-started/#examples">实例精选</a></li>
+      <li>&middot;</li>
+      <li><a href="http://v2.bootcss.com/">v2.3.2 中文文档</a></li>
+      <li>&middot;</li>
+      <li><a href="../about/">关于</a></li>
+      <li>&middot;</li>
+      <li><a href="http://expo.bootcss.com">优站精选</a></li>
+      <li>&middot;</li>
+      <li><a href="http://blog.getbootstrap.com">官方博客</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/releases">历史版本</a></li>
+    </ul>
+  </div>
+</footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
