@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Jumbotron Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+        <link href="css/docs.min.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: url('data:image/png;base64,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') repeat scroll 0 0 rgba(0, 0, 0, 0);">
+   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="color:#357ebd;font-size: 21px;"><b>城市记忆</b></a>
+        </div>
+        <div class="collapse navbar-collapse">
+        	<ul class="nav navbar-nav">
+	            <li class="active"><a href="#"><span class="glyphicon glyphicon-home">Home</span></a></li>
+	            <li><a href="#shop"><span class="glyphicon glyphicon-shopping-cart">Shop</span></a></li>
+	            <li><a href="#support"><span class="glyphicon glyphicon-headphones">Support</span></a></li>
+          	</ul>
+          	<form class="navbar-form navbar-right" role="search">
+	          	<div class="input-group">
+	               <span class="input-group-btn">
+	                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-list"></span></button>
+	               </span>
+	               <input type="text" class="form-control" placeholder="Search">
+	            </div>
+	          	<button type="button" class="btn btn-primary">
+	  				<span class="glyphicon glyphicon-list"></span>
+				</button>
+	            <div class="input-group">
+	            	<span class="input-group-addon glyphicon glyphicon-list"></a></span>
+	              	<input type="text" class="form-control" placeholder="Search">
+	            </div>
+	            <button type="submit" class="btn btn-success">登录</button>
+	            <button type="submit" class="btn btn-success">注册</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+	<div class="container">
+      <div class="row" style="padding:15px">
+        <div class="col-sm-3 col-md-2 sidebar" style="position: absolute;background-color: #fff;">
+          <ul class="nav nav-sidebar">
+            <li class="nav-header">个人中心</li>
+            <li><a href="">&nbsp;&nbsp;个人信息</a></li>
+            <li><a href="">&nbsp;&nbsp;设置头像</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li class="nav-header">我的产品</li>
+            <li><a href="">&nbsp;&nbsp;武器列表</a></li>
+            <li><a href="">&nbsp;&nbsp;装备列表</a></li>
+            <li><a href="">&nbsp;&nbsp;草药列表</a></li>
+            <li><a href="">&nbsp;&nbsp;矿石列表</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li class="nav-header">特色浏览</li>
+            <li><a href="">&nbsp;&nbsp;收藏夹</a></li>
+            <li class="active"><a href="">&nbsp;&nbsp;我的关注</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li class="nav-header">菜单</li>
+            <li><a href="#">&nbsp;&nbsp;标签</a></li>
+            <li><a href="#">&nbsp;&nbsp;评论</a></li>
+            <li><a href="#">&nbsp;&nbsp;搜索</a></li>
+            <li><a href="#">&nbsp;&nbsp;关于</a></li>
+            <li><a href="#">&nbsp;&nbsp;RSS订阅</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h2 class="page-header" style="padding-bottom: 9px;">我的关注</h2>
+            <ol class="breadcrumb" style="background-color: #fff;">
+			  <li><a href="#">个人中心</a></li>
+			  <li><a href="#">特色浏览</a></li>
+			  <li class="active">我的关注</li>
+			  <div style="float:right">
+				<span class="btn btn-success btn-xs" style="opacity: 0.65;">
+					<i class="glyphicon glyphicon-plus"></i>
+					<span>新加</span>
+				</span>
+			</div>
+			</ol>
+          <div class="row">
+		            	<div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+		            	<a href="">
+		            		<div style="background: none repeat scroll 0 0 #fff;padding:15px 0 15px 5px;border-bottom: 1px solid #e1e1e1;">
+					        <span>
+								<img class="img-circle" src="images/person.jpg" alt="Generic placeholder thumbnail">
+					        </span>
+					        <div style="float:right;padding:20px">
+					           <p class="text-muted">手套</p>
+					           <p class="text-muted">N2ZyB4bWxucz0ia</p>
+							   积分<span class="badge">14</span>&nbsp;&nbsp;关注<span class="badge">14</span>  
+					       </div>
+					       </div></a>
+		      		  </div>
+				      <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+		            		<div style="background: none repeat scroll 0 0 #fff;padding:15px 0 15px 5px;border-bottom: 1px solid #e1e1e1;">
+					        <span>
+								<img class="img-circle" src="images/person.jpg" alt="Generic placeholder thumbnail">
+					        </span>
+					        <div style="float:right;padding:20px">
+					           <p class="text-muted">手套</p>
+					           <p class="text-muted">N2ZyB4bWxucz0ia</p>
+							   积分<span class="badge">14</span>&nbsp;&nbsp;关注<span class="badge">14</span>  
+					       </div>
+					       </div>
+		      		  </div>
+				      <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+		            		<div style="background: none repeat scroll 0 0 #fff;padding:15px 0 15px 5px;border-bottom: 1px solid #e1e1e1;">
+					        <span>
+								<img class="img-circle" src="images/person.jpg" alt="Generic placeholder thumbnail">
+					        </span>
+					        <div style="float:right;padding:20px">
+					           <p class="text-muted">手套</p>
+					           <p class="text-muted">N2ZyB4bWxucz0ia</p>
+							   积分<span class="badge">14</span>&nbsp;&nbsp;关注<span class="badge">14</span>  
+					       </div>
+					       </div>
+		      		  </div>
+				    <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+		            		<div style="background: none repeat scroll 0 0 #fff;padding:15px 0 15px 5px;border-bottom: 1px solid #e1e1e1;">
+					        <span>
+								<img class="img-circle" src="images/person.jpg" alt="Generic placeholder thumbnail">
+					        </span>
+					        <div style="float:right;padding:20px">
+					           <p class="text-muted">手套</p>
+					           <p class="text-muted">N2ZyB4bWxucz0ia</p>
+							   积分<span class="badge">14</span>&nbsp;&nbsp;关注<span class="badge">14</span>  
+					       </div>
+					       </div>
+		      		  </div>
+				      <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+		            		<div style="background: none repeat scroll 0 0 #fff;padding:15px 0 15px 5px;border-bottom: 1px solid #e1e1e1;">
+					        <span>
+								<img class="img-circle" src="images/person.jpg" alt="Generic placeholder thumbnail">
+					        </span>
+					        <div style="float:right;padding:20px">
+					           <p class="text-muted">手套</p>
+					           <p class="text-muted">N2ZyB4bWxucz0ia</p>
+							   积分<span class="badge">14</span>&nbsp;&nbsp;关注<span class="badge">14</span>  
+					       </div>
+					       </div>
+		      		  </div>
+				      <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+		            		<div style="background: none repeat scroll 0 0 #fff;padding:15px 0 15px 5px;border-bottom: 1px solid #e1e1e1;">
+					        <span>
+								<img class="img-circle" src="images/person.jpg" alt="Generic placeholder thumbnail">
+					        </span>
+					        <div style="float:right;padding:20px">
+					           <p class="text-muted">手套</p>
+					           <p class="text-muted">N2ZyB4bWxucz0ia</p>
+							   积分<span class="badge">14</span>&nbsp;&nbsp;关注<span class="badge">14</span>  
+					       </div>
+					       </div>
+		      		  </div>
+				    <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+		            		<div style="background: none repeat scroll 0 0 #fff;padding:15px 0 15px 5px;border-bottom: 1px solid #e1e1e1;">
+					        <span>
+								<img class="img-circle" src="images/person.jpg" alt="Generic placeholder thumbnail">
+					        </span>
+					        <div style="float:right;padding:20px">
+					           <p class="text-muted">手套</p>
+					           <p class="text-muted">N2ZyB4bWxucz0ia</p>
+							   积分<span class="badge">14</span>&nbsp;&nbsp;关注<span class="badge">14</span>  
+					       </div>
+					       </div>
+		      		  </div>
+				     <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+		            		<div style="background: none repeat scroll 0 0 #fff;padding:15px 0 15px 5px;border-bottom: 1px solid #e1e1e1;">
+					        <span>
+								<img class="img-circle" src="images/person.jpg" alt="Generic placeholder thumbnail">
+					        </span>
+					        <div style="float:right;padding:20px">
+					           <p class="text-muted">手套</p>
+					           <p class="text-muted">N2ZyB4bWxucz0ia</p>
+							   积分<span class="badge">14</span>&nbsp;&nbsp;关注<span class="badge">14</span>  
+					       </div>
+					       </div>
+		      		  </div>
+          </div>
+          	<ul class="pager">
+			  <li><a href="#">上一页</a></li>
+			  <li>1/10</li>
+			  <li><a href="#">下一页</a></li>
+			</ul>
+          </div>
+       </div>
+      </div>
+<footer class="bs-docs-footer" role="contentinfo" style="background:#909090">
+  <div class="container">
+    <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+    <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+    <p>本项目源码受 <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a> 开源协议保护，文档受 <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> 开源协议保护。</p>
+    <ul class="bs-docs-footer-links muted">
+      <li>当前版本： v3.2.0</li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap">GitHub 仓库</a></li>
+      <li>&middot;</li>
+      <li><a href="../getting-started/#examples">实例精选</a></li>
+      <li>&middot;</li>
+      <li><a href="http://v2.bootcss.com/">v2.3.2 中文文档</a></li>
+      <li>&middot;</li>
+      <li><a href="../about/">关于</a></li>
+      <li>&middot;</li>
+      <li><a href="http://expo.bootcss.com">优站精选</a></li>
+      <li>&middot;</li>
+      <li><a href="http://blog.getbootstrap.com">官方博客</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/releases">历史版本</a></li>
+    </ul>
+  </div>
+</footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
