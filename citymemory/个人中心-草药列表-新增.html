@@ -68,14 +68,14 @@
         <div class="col-sm-3 col-md-2 sidebar" style="position: absolute;background-color: #fff;">
           <ul class="nav nav-sidebar">
             <li class="nav-header">个人中心</li>
-            <li class="active"><a href="">&nbsp;&nbsp;个人信息</a></li>
+            <li><a href="">&nbsp;&nbsp;个人信息</a></li>
             <li><a href="">&nbsp;&nbsp;设置头像</a></li>
           </ul>
           <ul class="nav nav-sidebar">
             <li class="nav-header">我的产品</li>
             <li><a href="">&nbsp;&nbsp;武器列表</a></li>
             <li><a href="">&nbsp;&nbsp;装备列表</a></li>
-            <li><a href="">&nbsp;&nbsp;草药列表</a></li>
+            <li class="active"><a href="">&nbsp;&nbsp;草药列表</a></li>
             <li><a href="">&nbsp;&nbsp;矿石列表</a></li>
           </ul>
           <ul class="nav nav-sidebar">
@@ -97,31 +97,14 @@
             <ol class="breadcrumb" style="background-color: #fff;">
 			  <li><a href="#">个人中心</a></li>
 			  <li><a href="#">个人中心</a></li>
-			  <li class="active">武器列表-新增</li>
+			  <li class="active">草药列表-新增</li>
 			</ol>
 		            <div class="col-sm-12 col-md-12" style="background: none repeat scroll 0 0 #fff;border-radius: 4px;padding:40px">
 		            <form class="form-horizontal" role="form">
 			   <div class="form-group">
 			      <label class="col-sm-2 control-label">名称</label>
 			      <div class="col-sm-6">
-			         <input class="form-control" id="disabledInput" type="text" value="风暴之锤">
-			      </div>
-			   </div>
-			    <div class="form-group">
-			      <label class="col-sm-2 control-label">来源</label>
-			      <div class="col-sm-6">
-			         <select multiple class="form-control">
-					  <option>游戏</option>
-					  <option>小说</option>
-					  <option>自创</option>
-					  <option>其他</option>
-					</select>
-			      </div>
-			   </div>
-			   <div class="form-group">
-			      <label class="col-sm-2 control-label">来源游戏</label>
-			      <div class="col-sm-6">
-			         <input class="form-control" id="disabledInput" type="text" value="魔兽世界">
+			         <p class="form-control-static">七色花</p>
 			      </div>
 			   </div>
 			   <div class="form-group">
@@ -129,31 +112,59 @@
 			         外形
 			      </label>
 			      <div class="col-sm-6">
-			         <input class="form-control" id="disabledInput" type="text" value="锤形">
+			         <input class="form-control" id="disabledInput" type="text" value="七片叶子">
 			      </div>
 			   </div>
 			    <div class="form-group">
 			      <label class="col-sm-2 control-label">
-			         使用方式
+			         功效
 			      </label>
 			      <div class="col-sm-6">
-			         <input type="text" class="form-control" id="inputSuccess" value="双手">
+			         <input type="text" class="form-control" id="inputSuccess" value="壮大神识">
 			      </div>
 			   </div>
 			   <div class="form-group">
 			      <label class="col-sm-2 control-label">
-			         攻击方式
+			         生长环境
 			      </label>
 			      <div class="col-sm-6">
-			         <input type="text" class="form-control" id="inputSuccess" value="砍，削，劈">
+			         <input type="text" class="form-control" id="inputSuccess" value="绝地">
 			      </div>
 			   </div>
 			   <div class="form-group">
 			      <label class="col-sm-2 control-label">
-			         制作材料
+			         伴生植物
 			      </label>
 			      <div class="col-sm-6">
-			         <input type="text" class="form-control" id="inputWarning" value="精金，铁">
+			         <input type="text" class="form-control" id="inputSuccess" value="草">
+			      </div>
+			   </div>
+			   <div class="form-group">
+			      <label class="col-sm-2 control-label">
+			         是否可进化
+			      </label>
+			      <div class="col-sm-6">
+			         <select class="form-control">
+					  <option>请选择</option>
+					  <option>可进化</option>
+					  <option>不可进化</option>
+					</select>
+			      </div>
+			   </div>
+			   <div class="form-group">
+			      <label class="col-sm-2 control-label">
+			         守护妖兽
+			      </label>
+			      <div class="col-sm-6">
+			         <input type="text" class="form-control" id="inputSuccess" value="妖莽">
+			      </div>
+			   </div>
+			   <div class="form-group">
+			      <label class="col-sm-2 control-label">
+			         用途
+			      </label>
+			      <div class="col-sm-6">
+			         <input type="text" class="form-control" id="inputWarning" value="炼制毒丹">
 			      </div>
 			   </div>
 			   <div class="form-group">
@@ -208,18 +219,6 @@
 					    </div>
 					    <!-- The container for the uploaded files -->
 					    <div id="files" class="files"></div>
-			      </div>
-			   </div>
-			   <div class="form-group">
-			      <label class="col-sm-2 control-label">适用人</label>
-			      <div class="col-sm-6">
-			         <input type="text" class="form-control" id="inputSuccess" value="战士">
-			      </div>
-			   </div>
-			   <div class="form-group">
-			      <label class="col-sm-2 control-label">消耗</label>
-			      <div class="col-sm-6">
-			         <input type="text" class="form-control" id="inputSuccess" value="怒气">
 			      </div>
 			   </div>
 			   <div class="form-group">
