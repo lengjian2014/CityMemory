@@ -98,3 +98,13 @@ body {
 	width: 45px;
 	vertical-align: baseline;
 }
+/*ËÑË÷Ò³*/
+.contents-search {
+	background: none repeat scroll 0 0 #fff;
+	margin-left: 0;
+	margin-right:0;
+	border-bottom: 1px solid #ddd;
+}
+.contents-search:hover{
+	border-bottom: 1px solid #4cae4c;
+}
