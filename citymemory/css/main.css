@@ -113,13 +113,83 @@ body {
 	border : none;
 	width: 80%;
 }
-
 .table-bordered > tbody > tr > th, .table-bordered > tbody > tr > td{
 	text-align: center;
 	border: none;
 	padding: 5px;
 	font-weight:100;
 }
+.table-bordered > tbody > tr > th {
+	color:#999999;
+}
 .table-bordered > tbody > tr > td{
 	text-align: left;
+}
+/*Ð¡ËµÊ×Ò³*/
+.xiaoshuo-news {
+	background: none repeat scroll 0 0 #fff;
+	padding : 10px 20px 20px 15px;
+	margin-bottom: 20px;
+}
+.xiaoshuo-news > li{
+    list-style:none;
+    padding:3px;
+}
+.xiaoshuo-news > li > span > a {
+	color :#999999;
+}
+.xiaoshuo-carousel-indicators {
+ 	bottom: 10px;
+    left: 50%;
+    margin-left: -30%;
+    padding-left: 0;
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    z-index: 15;
+}
+.xiaoshuo-carousel-indicators > li{
+	padding:10px;
+}
+
+.xiaoshuo-gengxin {
+	padding:0 15px;
+	margin-bottom: 0px;
+}
+.xiaoshuo-gengxin> .row{
+	margin:0 1px;
+	padding : 10px 0;
+	border-bottom: 1px solid #edf0f2;
+}
+.xiaoshuo-gengxin> .row:hover {
+	border-bottom: 1px solid #4cae4c;
+}
+.num-top {
+    background: none repeat scroll 0 0 #f23d7c;
+    border: 1px solid #dd2464;
+    color: #fff;
+    display: inline;
+    font-size: 12px;
+    line-height: 10px;
+    text-align: center;
+}
+
+/*ÓÎÏ·ÏêÏ¸Ò³*/
+.youxi-new-title {
+	margin: 5px -20px 147px 0;
+}
+.youxi-new-title > li{
+	margin: 2px 25px 2px 15px;
+    width: 400px;
+    float : left;
+    list-style:none;
+}
+.youxi-new-title > li > span > a {
+	color :#999999;
+}
+.youxi-news-date {
+	color :#999999;
+	float : right;
+	font-size : 12px;
+	padding-top : 4px;
 }

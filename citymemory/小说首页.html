@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Jumbotron Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/docs.min.css" rel="stylesheet">
+  </head>
+  <body>
+  	    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="color:#4cae4c;font-size: 22px;"><b>幻想世界</b></a>
+        </div>
+        <div class="collapse navbar-collapse">
+        	<ul class="nav navbar-nav">
+	            <li class="active"><a href="#"><span class="glyphicon glyphicon-home">首页</span></a></li>
+	            <li><a href="#shop"><span class="glyphicon glyphicon-book">小说</span></a></li>
+	            <li><a href="#support"><span class="glyphicon glyphicon-headphones">游戏</span></a></li>
+          	</ul>
+          	<form class="navbar-form navbar-right" role="search">
+	          	<div class="input-group">
+	               <span class="input-group-btn">
+	                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-list"></span></button>
+	               </span>
+	               <input type="text" class="form-control" placeholder="Search">
+	            </div>
+	            <button type="submit" class="btn btn-success">登录</button>
+	            <button type="submit" class="btn btn-success">注册</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+	<div class="container">
+		<div class="row" style="padding:60px 0 8px 0;">
+			<div class="col-sm-3 col-md-3" style="padding-right: 0px;">
+				<div style="font-family:Microsoft YaHei;color:#009900;"><span><span style="font-size:35px;">幻想世界</span> <span style="font-size:28px;">| 小说</span>&nbsp;</span></div> 
+			</div>
+			<div class="col-sm-5 col-md-5" style="padding: 12px  0 15px 0;">
+    				<input type="text" class="form-control" placeholder="小说 - 搜索">
+  			</div>
+		</div>
+    	<div class="row">
+          	<div class="col-sm-10 col-md-10" style="padding-right: 26px;margin-bottom: 20px;">
+				<div class="row">
+					<div class="col-sm-6 col-md-6" style="padding-right: 0px;">
+						<div id="carousel-example-captions" class="carousel slide" data-ride="carousel" style="margin-bottom: 0px;">
+							
+							<div class="carousel-inner" role="listbox">
+							<div class="item active">
+							<img alt="900x500" data-src="holder.js/900x500/auto/#777:#777" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjxnPjx0ZXh0IHg9IjM0MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNzc3O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjQycHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+OTAweDUwMDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true">
+							<div class="carousel-caption">
+							<h3>First slide label</h3>
+							<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+							</div>
+							</div>
+							<div class="item">
+							<img alt="900x500" data-src="holder.js/900x500/auto/#666:#666" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjxnPjx0ZXh0IHg9IjM0MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNjY2O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjQycHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+OTAweDUwMDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true">
+							<div class="carousel-caption">
+							<h3>Second slide label</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+							</div>
+							<div class="item">
+							<img alt="900x500" data-src="holder.js/900x500/auto/#555:#5555" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSIvPjxnPjx0ZXh0IHg9IjM0MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNTU1NTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZTo0MnB0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjkwMHg1MDA8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+							<div class="carousel-caption">
+							<h3>Third slide label</h3>
+							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+							</div>
+							</div>
+							</div>
+							<a class="left carousel-control" data-slide="prev" role="button" href="#carousel-example-captions">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span class="sr-only">Previous</span>
+							</a>
+							<ol class="carousel-indicators">
+							<li class="active" data-slide-to="0" data-target="#carousel-example-captions"></li>
+							<li class="" data-slide-to="1" data-target="#carousel-example-captions"></li>
+							<li class="" data-slide-to="2" data-target="#carousel-example-captions"></li>
+							</ol>
+							<a class="right carousel-control" data-slide="next" role="button" href="#carousel-example-captions">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6">
+					<ul class="nav nav-sidebar" style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin:0;">
+			            <li>
+			            	<div style="padding: 8px 15px;border-bottom: 1px solid #edf0f2;">
+								<p style="margin:0;">近期资讯</p>
+							</div>
+						</li>
+					</ul>	
+			         <ul class="xiaoshuo-news">
+								<li>-<span><a title="恶魔猎手的无尽杀戮 风暴英雄伊利丹入门指导" target="_blank" href="http://news.17173.com/content/2014-11-13/20141113173441899.shtml" onclick="trackEvent('游戏终极页','游戏终极页:最新资讯','游戏终极页:最新资讯:点击资讯链接');"> 恶魔猎手的无尽杀戮 风暴英雄伊利丹入 </a></span><span class="youxi-news-date">2014-11-14</span></li>
+								<li>-<span><a title="《风暴英雄》新地图天空神殿介绍影片曝光" target="_blank" href="http://news.17173.com/content/2014-11-13/20141113163420796_1.shtml" onclick="trackEvent('游戏终极页','游戏终极页:最新资讯','游戏终极页:最新资讯:点击资讯链接');"> 《风暴英雄》新地图天空神殿介绍影片 </a></span><span class="youxi-news-date">2014-11-14</span></li>
+								<li>-<span><a title="买买买 《风暴英雄》买了就不会亏的英雄" target="_blank" href="http://news.17173.com/content/2014-11-10/20141110101844903.shtml" onclick="trackEvent('游戏终极页','游戏终极页:最新资讯','游戏终极页:最新资讯:点击资讯链接');"> 买买买 《风暴英雄》买了就不会亏的英 </a></span><span class="youxi-news-date">2014-11-14</span></li>
+								<li>-<span><a title="风暴英雄首日未发布内容：暗黑地图及新英雄" target="_blank" href="http://news.17173.com/content/2014-11-09/20141109040513819.shtml" onclick="trackEvent('游戏终极页','游戏终极页:最新资讯','游戏终极页:最新资讯:点击资讯链接');"> 风暴英雄首日未发布内容：暗黑地图及新 </a></span><span class="youxi-news-date">2014-11-14</span></li>
+								<li>-<span><a title="2014暴雪嘉年华《风暴英雄》四大看点回顾" target="_blank" href="http://news.17173.com/content/2014-11-08/20141108180802539_1.shtml" onclick="trackEvent('游戏终极页','游戏终极页:最新资讯','游戏终极页:最新资讯:点击资讯链接');"> 2014暴雪嘉年华《风暴英雄》四大看点 </a></span><span class="youxi-news-date">2014-11-14</span></li>
+								<li>-<span><a title="妙用Z键！《风暴英雄》你不知道的小秘密" target="_blank" href="http://news.17173.com/content/2014-11-07/20141107153006885.shtml" onclick="trackEvent('游戏终极页','游戏终极页:最新资讯','游戏终极页:最新资讯:点击资讯链接');"> 妙用Z键！《风暴英雄》你不知道的小秘密 </a></span><span class="youxi-news-date">2014-11-14</span></li>
+								<li>-<span><a title="妙用Z键！《风暴英雄》你不知道的小秘密" target="_blank" href="http://news.17173.com/content/2014-11-07/20141107153006885.shtml" onclick="trackEvent('游戏终极页','游戏终极页:最新资讯','游戏终极页:最新资讯:点击资讯链接');"> 妙用Z键！《风暴英雄》你不知道的小秘密 </a></span><span class="youxi-news-date">2014-11-14</span></li>
+								<li>-<span><a title="《风暴英雄》地图要素及机制超详细全详解" target="_blank" href="http://newgame.17173.com/news/11052014/115951949_1.shtml" onclick="trackEvent('游戏终极页','游戏终极页:最新资讯','游戏终极页:最新资讯:点击资讯链接');"> 《风暴英雄》地图要素及机制超详细全 </a></span><span class="youxi-news-date">2014-11-14</span></li>
+								<li>-<span><a title="《风暴英雄》之恐魔园战略要素详解" target="_blank" href="http://news.17173.com/content/2014-11-04/20141104112729343.shtml" onclick="trackEvent('游戏终极页','游戏终极页:最新资讯','游戏终极页:最新资讯:点击资讯链接');"> 《风暴英雄》之恐魔园战略要素详解 </a></span><span class="youxi-news-date">2014-11-14</span></li>
+								<li>-<span><a title="叫我女王大人 《风暴英雄》猎魔人维拉指" target="_blank" href="http://news.17173.com/content/2014-11-03/20141103103530525.shtml" onclick="trackEvent('游戏终极页','游戏终极页:最新资讯','游戏终极页:最新资讯:点击资讯链接');"> 叫我女王大人 《风暴英雄》猎魔人维拉 </a></span><span class="youxi-news-date">2014-11-14</span></li>
+			        </ul>	
+			        </div>
+			    </div>          
+				<ul class="nav nav-sidebar" style="background: none repeat scroll 0 0 #fff;border-radius: 4px 4px 0 0;margin:0;margin-bottom: 20px;">
+			            <li>
+			            	<div style="padding: 8px 15px;border-bottom: 1px solid #edf0f2;">
+								<p style="margin:0;"><span class="glyphicon glyphicon-list-alt"></span> 最近更新</p>
+							</div>
+						</li>
+						<li class="xiaoshuo-gengxin">
+							<div class="row">
+								<div class="col-sm-3 col-md-3">
+									<a>[玄幻魔法]《罚神之剑》</a>
+								</div>
+								<div class="col-sm-6 col-md-6">
+									<a><a target="_blank" href="http://www.xs222.com/html/1/1612/1253956.html">第六百四十七章 神箭之威</a></a>
+								</div>
+								<div class="col-sm-3 col-md-3">
+									<a>玉雪阳</a> <span class="youxi-news-date">2014-11-15</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3 col-md-3">
+									<a>[玄幻魔法]《罚神之剑》</a>
+								</div>
+								<div class="col-sm-6 col-md-6">
+									<a><a target="_blank" href="http://www.xs222.com/html/1/1612/1253956.html">第六百四十七章 神箭之威</a></a>
+								</div>
+								<div class="col-sm-3 col-md-3">
+									<a>玉雪阳</a> <span class="youxi-news-date">2014-11-15</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3 col-md-3">
+									<a>[玄幻魔法]《罚神之剑》</a>
+								</div>
+								<div class="col-sm-6 col-md-6">
+									<a><a target="_blank" href="http://www.xs222.com/html/1/1612/1253956.html">第六百四十七章 神箭之威</a></a>
+								</div>
+								<div class="col-sm-3 col-md-3">
+									<a>炮轰南天门作品集</a> <span class="youxi-news-date">2014-11-15</span>
+								</div>
+							</div>
+							<div style="padding:10px 0"></div>
+						</li>
+		          </ul>
+		        <div  style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin-bottom: 20px;">
+	  				<div style="padding: 8px 15px;border-bottom: 1px solid #edf0f2;">
+						<p style="margin:0;"><span class="glyphicon glyphicon-list"></span> 小说榜单</p>
+					</div>
+					<div class="row" style="margin:10px 0;">
+						<div class="col-sm-4 col-md-4" style="padding:0 15px 20px 15px;">
+							<div class="table-responsive" style="border: 2px solid #edf0f2;">
+								<table class="table">
+								<thead>
+								<tr><td>全部</td></tr>
+								</thead>
+								<thead><tr style="background: none repeat scroll 0 0 #eee;">
+								<td>排名</td><td>关键词</td><td style="text-align:right">搜索指数</td></tr>
+								</thead>
+								<tbody>
+								<tr><td><span class="num-top">1</span></td><td><a>造化之门</a></td><td style="text-align:right">22333<span style="color: rgb(38, 132, 220);font-size: 11px;" class="glyphicon glyphicon-sort"></span></td></tr>
+								<tr><td><span class="num-top">2</span></td><td><a>造化之门</a></td><td style="text-align:right">22333<span style="color: rgb(61, 140, 60); font-size: 11px;" class="glyphicon glyphicon-arrow-up"></span></td></tr>
+								<tr><td><span class="num-top">3</span></td><td><a>造化之门</a></td><td style="text-align:right">22333<span style="color: rgb(255, 140, 60); font-size: 11px;" class="glyphicon glyphicon-arrow-down" ></span></td></tr>
+								</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4" style="padding:0 15px 20px 15px;">
+							<div class="table-responsive" style="border: 2px solid #edf0f2;">
+								<table class="table">
+								<thead>
+								<tr><td>全部</td></tr>
+								</thead>
+								<thead><tr style="background: none repeat scroll 0 0 #eee;">
+								<td>排名</td><td>关键词</td><td>搜索指数</td></tr>
+								</thead>
+								<tbody>
+								<tr><td>1</td><td>Table cell</td><td>Table cell</td></tr>
+								<tr><td>2</td><td>Table cell</td><td>Table cell</td></tr>
+								<tr><td>3</td><td>Table cell</td><td>Table cell</td></tr>
+								</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4" style="padding:0 15px 20px 15px;">
+							<div class="table-responsive" style="border: 2px solid #edf0f2;">
+								<table class="table">
+								<thead>
+								<tr><td>全部</td></tr>
+								</thead>
+								<thead><tr style="background: none repeat scroll 0 0 #eee;">
+								<td>排名</td><td>关键词</td><td>搜索指数</td></tr>
+								</thead>
+								<tbody>
+								<tr><td>1</td><td>Table cell</td><td>Table cell</td></tr>
+								<tr><td>2</td><td>Table cell</td><td>Table cell</td></tr>
+								<tr><td>3</td><td>Table cell</td><td>Table cell</td></tr>
+								</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4" style="padding:0 15px 20px 15px;">
+							<div class="table-responsive" style="border: 2px solid #edf0f2;">
+								<table class="table">
+								<thead>
+								<tr><td>全部</td></tr>
+								</thead>
+								<thead><tr style="background: none repeat scroll 0 0 #eee;">
+								<td>排名</td><td>关键词</td><td>搜索指数</td></tr>
+								</thead>
+								<tbody>
+								<tr><td>1</td><td>Table cell</td><td>Table cell</td></tr>
+								<tr><td>2</td><td>Table cell</td><td>Table cell</td></tr>
+								<tr><td>3</td><td>Table cell</td><td>Table cell</td></tr>
+								</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4" style="padding:0 15px 20px 15px;">
+							<div class="table-responsive" style="border: 2px solid #edf0f2;">
+								<table class="table">
+								<thead>
+								<tr><td>全部</td></tr>
+								</thead>
+								<thead><tr style="background: none repeat scroll 0 0 #eee;">
+								<td>排名</td><td>关键词</td><td>搜索指数</td></tr>
+								</thead>
+								<tbody>
+								<tr><td>1</td><td>Table cell</td><td>Table cell</td></tr>
+								<tr><td>2</td><td>Table cell</td><td>Table cell</td></tr>
+								<tr><td>3</td><td>Table cell</td><td>Table cell</td></tr>
+								</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4" style="padding:0 15px 20px 15px;">
+							<div class="table-responsive" style="border: 2px solid #edf0f2;">
+								<table class="table">
+								<thead>
+								<tr><td>全部</td></tr>
+								</thead>
+								<thead><tr style="background: none repeat scroll 0 0 #eee;">
+								<td>排名</td><td>关键词</td><td>搜索指数</td></tr>
+								</thead>
+								<tbody>
+								<tr><td>1</td><td>Table cell</td><td>Table cell</td></tr>
+								<tr><td>2</td><td>Table cell</td><td>Table cell</td></tr>
+								<tr><td>3</td><td>Table cell</td><td>Table cell</td></tr>
+								</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4" style="padding:0 15px 20px 15px;">
+							<div class="table-responsive" style="border: 2px solid #edf0f2;">
+								<table class="table">
+								<thead>
+								<tr><td>全部</td></tr>
+								</thead>
+								<thead><tr style="background: none repeat scroll 0 0 #eee;">
+								<td>排名</td><td>关键词</td><td>搜索指数</td></tr>
+								</thead>
+								<tbody>
+								<tr><td>1</td><td>Table cell</td><td>Table cell</td></tr>
+								<tr><td>2</td><td>Table cell</td><td>Table cell</td></tr>
+								<tr><td>3</td><td>Table cell</td><td>Table cell</td></tr>
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+		     </div>
+         </div>
+	      <div class="col-sm-2 col-md-2" style="fload:right;padding-left: 0px;">
+	          <div style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin:0;margin-bottom: 20px;">
+	  				<div style="padding: 8px 15px;border-bottom: 1px solid #edf0f2;">
+						<p style="margin:0;">热门标签</p>
+					</div>
+					<div style="padding: 8px 1px 5px 15px;background: none repeat scroll 0 0 #fff;">
+						<p>
+				            <a href=""><span class="label label-default">Default</span></a>
+							<a href=""><span class="label label-primary">Primary</span></a>
+							<a href=""><span class="label label-success">Success</span></a>
+							<a href=""><span class="label label-info">Info</span></a>
+							<a href=""><span class="label label-success">Success</span></a>
+							<a href=""><span class="label label-info">Info</span></a>
+							<a href=""><span class="label label-warning">Warning</span></a>
+							<a href=""><span class="label label-danger">Danger</span></a>
+						</p>
+					</div>
+		        	</div>
+					<div class="input-group " style="margin-bottom: 20px;">
+			               <span class="input-group-btn">
+			                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-list"></span></button>
+			               </span>
+			               <input type="text" class="form-control" placeholder="Search">
+			         </div>
+			      <div style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin:0;margin-bottom: 20px;">
+	  				<div style="padding: 8px 15px;border-bottom: 1px solid #edf0f2;">
+						<p style="margin:0;">新加会员</p>
+					</div>
+					<div style="padding: 8px 15px;background: none repeat scroll 0 0 #fff;">
+						<a><img class="img-circle" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+					</div>
+		        </div>
+		        <div style="border-radius: 4px;margin-bottom: 20px;">
+		        	<a><img style="height: 100%;width: 100%;border-radius: 6px 6px 0 0;" src="images/4.jpg"></a>
+		        </div>
+		          <ul class="nav nav-sidebar" style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin:0;">
+		            <li>
+		            	<div style="padding: 8px 15px;border-bottom: 1px solid #edf0f2;">
+							<p style="margin:0;">热门标签</p>
+						</div>
+					</li>
+		            <li><a href="/topic/19559450" target="_blank">
+					<img style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg">
+					</a></li>
+		            <li><a href="/topic/19559450" target="_blank">
+					<img style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg">
+					</a></li>
+					<li><a href="/topic/19559450" target="_blank">
+					<img style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg">
+					</a></li>
+					<li><a href="/topic/19559450" target="_blank">
+					<img style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg">
+					</a></li>
+		          </ul>
+	        </div>
+    </div>   
+</div>             
+<footer class="bs-docs-footer" role="contentinfo" style="background:#909090">
+  <div class="container">
+    <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+    <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+    <p>本项目源码受 <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a> 开源协议保护，文档受 <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> 开源协议保护。</p>
+    <ul class="bs-docs-footer-links muted">
+      <li>当前版本： v3.2.0</li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap">GitHub 仓库</a></li>
+      <li>&middot;</li>
+      <li><a href="../getting-started/#examples">实例精选</a></li>
+      <li>&middot;</li>
+      <li><a href="http://v2.bootcss.com/">v2.3.2 中文文档</a></li>
+      <li>&middot;</li>
+      <li><a href="../about/">关于</a></li>
+      <li>&middot;</li>
+      <li><a href="http://expo.bootcss.com">优站精选</a></li>
+      <li>&middot;</li>
+      <li><a href="http://blog.getbootstrap.com">官方博客</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/releases">历史版本</a></li>
+    </ul>
+  </div>
+</footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lib/jquery.raty.min.js"></script>
+    <script>
+    	$(function(){
+    		 $('#star').raty({
+    		        path      : 'js/lib/img',
+    		        cancelOff : 'cancel-off-big.png',
+    		        cancelOn  : 'cancel-on-big.png',
+    		        size      : 24,
+    		        starHalf  : 'star-half-big.png',
+    		        starOff   : 'star-off-big.png',
+    		        starOn    : 'star-on-big.png',
+    		        cancel    : false,
+    		        targetKeep: true,
+    		        readOnly: true, 
+    		        score: 3, 
+    		        precision : true
+    		      });
+			$('#star-score').raty({
+				path      : 'js/lib/img',
+				cancel     : true,
+				cancelPlace: 'right'
+			});
+    	});
+    </script>
+  </body>
+</html>
