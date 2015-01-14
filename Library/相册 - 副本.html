@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Jumbotron Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/docs.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+;(function($){
+   var 
+   //参数
+   setting={
+      column_width:220,//列宽
+	  column_className:'waterfall_column',//列的类名
+	  column_space:10,//列间距
+	  cell_selector:'.cell',//要排列的砖块的选择器，context为整个外部容器
+	  img_selector:'img',//要加载的图片的选择器
+	  auto_imgHeight:true,//是否需要自动计算图片的高度
+	  fadein:true,//是否渐显载入
+	  fadein_speed:600,//渐显速率，单位毫秒
+	  insert_type:1, //单元格插入方式，1为插入最短那列，2为按序轮流插入
+	  getResource:function(index){ }  //获取动态资源函数,必须返回一个砖块元素集合,传入参数为加载的次数
+   },
+   //
+   waterfall=$.waterfall={},//对外信息对象
+   $waterfall=null;//容器
+   waterfall.load_index=0, //加载次数
+   $.fn.extend({
+       waterfall:function(opt){
+		  opt=opt||{};  
+	      setting=$.extend(setting,opt);
+		  $waterfall=waterfall.$waterfall=$(this);
+		  waterfall.$columns=creatColumn();
+		  render($(this).find(setting.cell_selector).detach(),false); //重排已存在元素时强制不渐显
+		  waterfall._scrollTimer2=null;
+		  $(window).bind('scroll',function(){
+		     clearTimeout(waterfall._scrollTimer2);
+			 waterfall._scrollTimer2=setTimeout(onScroll,300);
+		  });
+		  waterfall._scrollTimer3=null;
+		  $(window).bind('resize',function(){
+		     clearTimeout(waterfall._scrollTimer3);
+			 waterfall._scrollTimer3=setTimeout(onResize,300);
+		  });
+	   }
+   });
+   function creatColumn(){//创建列
+      waterfall.column_num=calculateColumns();//列数
+	  //循环创建列
+	  var html='';
+	  for(var i=0;i<waterfall.column_num;i++){
+	     html+='<div class="'+setting.column_className+' col-sm-12 col-md-3" style="width:'+setting.column_width+'px;display:inline-block; *display:inline;zoom:1; margin-left:'+setting.column_space/2+'px;margin-right:'+setting.column_space/2+'px; vertical-align:top; overflow:hidden"></div>';
+	  }
+	  $waterfall.prepend(html);//插入列
+	  return $('.'+setting.column_className,$waterfall);//列集合
+   }
+   function calculateColumns(){//计算需要的列数
+      var num=Math.floor(($waterfall.outerWidth())/(setting.column_width+setting.column_space));
+	  if(num<1){ num=1; } //保证至少有一列
+	  return num;
+   }
+   function render(elements,fadein){//渲染元素
+      if(!$(elements).length) return;//没有元素
+      var $columns = waterfall.$columns;
+      $(elements).each(function(i){										
+		  if(!setting.auto_imgHeight||setting.insert_type==2){//如果给出了图片高度，或者是按顺序插入，则不必等图片加载完就能计算列的高度了
+		     if(setting.insert_type==1){ 
+			    insert($(elements).eq(i),setting.fadein&&fadein);//插入元素
+			 }else if(setting.insert_type==2){
+			    insert2($(elements).eq(i),i,setting.fadein&&fadein);//插入元素	 
+		     }
+			 return true;//continue
+		  }						
+		  if($(this)[0].nodeName.toLowerCase()=='img'||$(this).find(setting.img_selector).length>0){//本身是图片或含有图片
+		      var image=new Image;
+			  var src=$(this)[0].nodeName.toLowerCase()=='img'?$(this).attr('src'):$(this).find(setting.img_selector).attr('src');
+			  image.onload=function(){//图片加载后才能自动计算出尺寸
+			      image.onreadystatechange=null;
+				  if(setting.insert_type==1){ 
+				     insert($(elements).eq(i),setting.fadein&&fadein);//插入元素
+				  }else if(setting.insert_type==2){
+					 insert2($(elements).eq(i),i,setting.fadein&&fadein);//插入元素	 
+				  }
+				  image=null;
+			  }
+			  image.onreadystatechange=function(){//处理IE等浏览器的缓存问题：图片缓存后不会再触发onload事件
+			      if(image.readyState == "complete"){
+					 image.onload=null;
+					 if(setting.insert_type==1){ 
+					    insert($(elements).eq(i),setting.fadein&&fadein);//插入元素
+					 }else if(setting.insert_type==2){
+					    insert2($(elements).eq(i),i,setting.fadein&&fadein);//插入元素	 
+					 }
+					 image=null;
+				  }
+			  }
+			  image.src=src;
+		  }else{//不用考虑图片加载
+		      if(setting.insert_type==1){ 
+				 insert($(elements).eq(i),setting.fadein&&fadein);//插入元素
+			  }else if(setting.insert_type==2){
+				 insert2($(elements).eq(i),i,setting.fadein&&fadein);//插入元素	 
+			  }
+		  }						
+	  });
+   }
+   function public_render(elems){//ajax得到元素的渲染接口
+   	  render(elems,true);	
+   }
+   function insert($element,fadein){//把元素插入最短列
+      if(fadein){//渐显
+	     $element.css('opacity',0).appendTo(waterfall.$columns.eq(calculateLowest())).fadeTo(setting.fadein_speed,1);
+	  }else{//不渐显
+         $element.appendTo(waterfall.$columns.eq(calculateLowest()));
+	  }
+   }
+   function insert2($element,i,fadein){//按序轮流插入元素
+      if(fadein){//渐显
+	     $element.css('opacity',0).appendTo(waterfall.$columns.eq(i%waterfall.column_num)).fadeTo(setting.fadein_speed,1);
+	  }else{//不渐显
+         $element.appendTo(waterfall.$columns.eq(i%waterfall.column_num));
+	  }
+   }
+   function calculateLowest(){//计算最短的那列的索引
+      var min=waterfall.$columns.eq(0).outerHeight(),min_key=0;
+	  waterfall.$columns.each(function(i){						   
+		 if($(this).outerHeight()<min){
+		    min=$(this).outerHeight();
+			min_key=i;
+		 }							   
+	  });
+	  return min_key;
+   }
+   function getElements(){//获取资源
+      $.waterfall.load_index++;
+      return setting.getResource($.waterfall.load_index,public_render);
+   }
+   waterfall._scrollTimer=null;//延迟滚动加载计时器
+   function onScroll(){//滚动加载
+      clearTimeout(waterfall._scrollTimer);
+	  waterfall._scrollTimer=setTimeout(function(){
+	      var $lowest_column=waterfall.$columns.eq(calculateLowest());//最短列
+	     var bottom=$lowest_column.offset().top+$lowest_column.outerHeight();//最短列底部距离浏览器窗口顶部的距离
+		  var scrollTop=document.documentElement.scrollTop||document.body.scrollTop||0;//滚动条距离
+		  var windowHeight=document.documentElement.clientHeight||document.body.clientHeight||0;//窗口高度
+		  if(scrollTop>=bottom-windowHeight){
+			 render(getElements(),true);
+		  }
+	  },100);
+   }
+   function onResize(){//窗口缩放时重新排列
+      if(calculateColumns()==waterfall.column_num) return; //列数未改变，不需要重排
+      var $cells=waterfall.$waterfall.find(setting.cell_selector);
+	  waterfall.$columns.remove();
+	  waterfall.$columns=creatColumn();
+      render($cells,false); //重排已有元素时强制不渐显
+   }
+   	//刷新延迟加载
+	clearTimeout(waterfall._scrollTimer2);
+    waterfall._scrollTimer2=setTimeout(onScroll,300);
+})(jQuery);
+</script>
+  </head>
+  <body>
+  	    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="color:#4cae4c;font-size: 22px;"><b>城市记忆</b></a>
+        </div>
+        <div class="collapse navbar-collapse">
+        	<ul class="nav navbar-nav">
+	            <li class="active"><a href="#"><span class="glyphicon glyphicon-home">首页</span></a></li>
+	            <li><a href="#shop"><span class="glyphicon glyphicon-shopping-cart">小说</span></a></li>
+	            <li><a href="#support"><span class="glyphicon glyphicon-headphones">游戏</span></a></li>
+          	</ul>
+          	<form class="navbar-form navbar-right" role="search">
+	          	<div class="input-group">
+	               <span class="input-group-btn">
+	                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-list"></span></button>
+	               </span>
+	               <input type="text" class="form-control" placeholder="Search">
+	            </div>
+	            <button type="submit" class="btn btn-success">登录</button>
+	            <button type="submit" class="btn btn-success">注册</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+	<div class="container">
+		<div style="text-align:center;padding:70px 0 8px 0;"><h1>天安门</h1></div>
+    	<div class="row">
+          	<div class="col-sm-12 col-md-10" style="padding-right: 25px;margin-bottom: 20px;">
+          		  <ol class="breadcrumb" style="background: none repeat scroll 0 0 #fff;">
+					  <li class="active">排序</li>
+					  <li><a href="#">按时间</a></li>
+					  <li><a href="#">按热度</a></li>
+					</ol>
+					<div id="waterfall" style="text-align:center">
+					 		
+          		  </div>
+          </div>		  
+	      <div class="col-sm-12 col-md-2" style="fload:right;padding-left: 0px;">
+	          		<div style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin:0;margin-bottom: 20px;">
+		  				<div style="padding: 8px 15px;border-bottom: 1px solid #edf0f2;">
+							<p style="margin:0;">相册描述</p>
+						</div>
+						<div style="padding: 8px 15px;background: none repeat scroll 0 0 #fff;">
+							<span style="color:#999999;">
+								　　那一天，是宁城最失意的时候，那一天，他被硬生生的带到了这里。　　这个角落因为有了宁城，将在浩瀚星空中留名，这个世界也因为有了宁城...
+								</span>
+						</div>
+		        	</div>
+	          		<div style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin:0;margin-bottom: 20px;">
+		  				<div style="padding: 8px 15px;border-bottom: 1px solid #edf0f2;">
+							<p style="margin:0;">热门标签</p>
+						</div>
+						<div style="padding: 8px 15px;background: none repeat scroll 0 0 #fff;">
+							<a>魔兽世界</a>
+							<a>魔兽世界</a>
+							<a>魔兽世界</a>
+							<a>魔兽世界</a>
+							<a>魔兽世界</a>
+							<a>魔兽世界</a>
+						</div>
+		        	</div>
+					<div class="input-group " style="margin-bottom: 20px;">
+			               <span class="input-group-btn">
+			                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-list"></span></button>
+			               </span>
+			               <input type="text" class="form-control" placeholder="Search">
+			         </div>
+			      <div style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin:0;margin-bottom: 20px;">
+	  				<div style="padding: 8px 15px;border-bottom: 1px solid #edf0f2;">
+						<p style="margin:0;">新加会员</p>
+					</div>
+					<div style="padding: 8px 15px;background: none repeat scroll 0 0 #fff;">
+						<a><img class="img-circle" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle" alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+						<a><img class="img-circle"  alt="机器学习" src="images/8e0f7704a_m.jpg"></a>
+					</div>
+		        </div>
+		        <div style="border-radius: 4px;margin-bottom: 20px;">
+		        	<a><img style="height: 100%;width: 100%;border-radius: 6px 6px 0 0;" src="images/4.jpg"></a>
+		        </div>
+		          <ul class="nav nav-sidebar" style="background: none repeat scroll 0 0 #fff;border-radius: 4px;margin:0;">
+		            <li>
+		            	<div style="padding: 8px 15px;border-bottom: 1px solid #edf0f2;">
+							<p style="margin:0;">热门标签</p>
+						</div>
+					</li>
+		            <li><a href="/topic/19559450" target="_blank">
+					<img style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg">
+					</a></li>
+		            <li><a href="/topic/19559450" target="_blank">
+					<img style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg">
+					</a></li>
+					<li><a href="/topic/19559450" target="_blank">
+					<img style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg">
+					</a></li>
+					<li><a href="/topic/19559450" target="_blank">
+					<img style="height: 40px;width: 40px;vertical-align: baseline;" alt="机器学习" src="images/8e0f7704a_m.jpg">
+					</a></li>
+		          </ul>
+	        </div>
+    </div>   
+</div>             
+<footer class="bs-docs-footer" role="contentinfo" style="background:#909090">
+  <div class="container">
+    <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+    <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+    <p>本项目源码受 <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a> 开源协议保护，文档受 <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> 开源协议保护。</p>
+    <ul class="bs-docs-footer-links muted">
+      <li>当前版本： v3.2.0</li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap">GitHub 仓库</a></li>
+      <li>&middot;</li>
+      <li><a href="../getting-started/#examples">实例精选</a></li>
+      <li>&middot;</li>
+      <li><a href="http://v2.bootcss.com/">v2.3.2 中文文档</a></li>
+      <li>&middot;</li>
+      <li><a href="../about/">关于</a></li>
+      <li>&middot;</li>
+      <li><a href="http://expo.bootcss.com">优站精选</a></li>
+      <li>&middot;</li>
+      <li><a href="http://blog.getbootstrap.com">官方博客</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/releases">历史版本</a></li>
+    </ul>
+  </div>
+</footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<script>
+var opt={
+  getResource:function(index,render){//index为已加载次数,render为渲染接口函数,接受一个dom集合或jquery对象作为参数。通过ajax等异步方法得到的数据可以传入该接口进行渲染，如 render(elem)
+	  if(index>=7) index=index%7+1;
+	  var html='';
+	  for(var i=20*(index-1);i<20*(index-1)+20;i++){
+		 var k='';
+		 for(var ii=0;ii<3-i.toString().length;ii++){
+	        k+='0';
+		 }
+		 k+=i;
+	     var src="http://cued.xunlei.com/demos/publ/img/P_"+k+".jpg";
+	     html+='<div style="margin-bottom: 20px;"><div class="contents"><div class="thumbnail">';
+	   	 html+='<img src="'+src+'" alt="Generic placeholder thumbnail" style="padding:10px 5px"></div><div>';
+	   	 html+='<p class="text-muted contents-describe"><span>使用单一的一组.col-md-*栅格类，就可以创建一个基本的栅格... </span></p>';
+	   	 html+='<p align="right" style="margin: 0;"><span style="font-size:12px;">赞(<span><a href="#" target="_black">11</a></span>)&nbsp; 推荐(<span><a href="#" target="_black">11</a></span>)&nbsp; 评论(<span><a href="#" target="_black">11</a></span>)&nbsp; </span></p>';
+	   	 html+='<p align="right"><span>By </span><span style="font-size:12px;"><a>kinddd</a> &nbsp;</span> </p></div></div></div>';
+	  }
+	  return $(html);
+  },
+  auto_imgHeight:true,
+  insert_type:1
+}
+$('#waterfall').waterfall(opt);
+</script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Jumbotron Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/docs.min.css" rel="stylesheet">
+    <link href="css/features.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+	//JSON PORTFOLIO
+	var portfolioJSON = [{"0":"测试Mother's Ring Builder","4":"2013-03-25 20:00:50","1":"2013\/03\/mothers.jpg","3":"191"},{"0":"BCI Rentals - Custom CMS","4":"2012-10-28 19:24:24","1":"2013\/03\/bci.jpg","3":"201"},{"0":"Schoolwires Creative Services","4":"2012-03-07 03:07:55","1":"2012\/03\/creative.jpg","2":"#FFFFFF","3":"82"},{"0":"Self-Service","4":"2012-03-06 16:43:34","1":"2012\/03\/selfservice11.jpg","2":"#669900","3":"4"},{"0":"Portfolio: \"Infinite Scolling\" Wall","4":"2012-03-05 16:44:51","1":"2012\/03\/portfolio1.jpg","2":"#304B89","3":"176"}];
+	var featuresTimer;
+	var resizeTimer;
+	var hoverTimer;
+</script>
+    <script type="text/javascript" src="js/features.js"></script>
+  </head>
+  <body style="background:#909090">
+  	    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="color:#4cae4c;font-size: 22px;"><b>在线图书馆</b></a>
+        </div>
+        <div class="collapse navbar-collapse">
+        	<ul class="nav navbar-nav">
+	            <li class="active"><a href="#"><span class="glyphicon glyphicon-home">首页</span></a></li>
+	            <li><a href="#shop"><span class="glyphicon glyphicon-shopping-cart">小说</span></a></li>
+	            <li><a href="#support"><span class="glyphicon glyphicon-headphones">游戏</span></a></li>
+          	</ul>
+          	<form class="navbar-form navbar-right" role="search">
+	          	<div class="input-group">
+	               <span class="input-group-btn">
+	                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-list"></span></button>
+	               </span>
+	               <input type="text" class="form-control" placeholder="Search">
+	            </div>
+	            <button type="submit" class="btn btn-success">登录</button>
+	            <button type="submit" class="btn btn-success">注册</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+	<div class="container">
+		<div class="row" style="padding:60px 0 8px 0;">
+			<h2 style="text-align:center">北京天安门</h2>
+		</div>
+    	<div class="row">
+			<div id="features-container">
+				<div class="frame-smaller-outer left">
+					<div class="frame-smaller-inner">
+						<div class="slider">
+							<img src='images/selfservice11.jpg' /><img src='images/portfolio1.jpg' /><img src='images/mothers.jpg' /><img src='images/bci.jpg' /><img src='images/creative.jpg' /><img src='images/selfservice11.jpg' /><img src='images/portfolio1.jpg' /><img src='images/mothers.jpg' />				</div>
+					</div>
+				</div>
+				<div class="frame-smaller-outer right">
+					<div class="frame-smaller-inner">
+						<div class="slider">
+							<img src='images/selfservice11.jpg' /><img src='images/portfolio1.jpg' /><img src='images/mothers.jpg' /><img src='images/bci.jpg' /><img src='images/creative.jpg' /><img src='images/selfservice11.jpg' /><img src='images/portfolio1.jpg' /><img src='images/mothers.jpg' />				</div>
+					</div>
+				</div>
+				<img id="frame-center-shadow" src="images/frame-shadow.png" />
+				<div id="frame-center-outer">
+					<div id="frame-center-inner">
+						<div class="slider">
+							<a href='http://sc.chinaz.com/?p=4'><span class='title'>Self-Service</span><span class='more'>view more</span><span class='image-holder'><img src='images/selfservice11.jpg' /></span></a><a href='http://sc.chinaz.com/?p=176'><span class='title'>Portfolio: "Infinite Scolling" Wall</span><span class='more'>view more</span><span class='image-holder'><img src='images/portfolio1.jpg' /></span></a><a href='http://sc.chinaz.com/?p=191'><span class='title'>Mother's Ring Builder</span><span class='more'>view more</span><span class='image-holder'><img src='images/mothers.jpg' /></span></a><a href='http://sc.chinaz.com/?p=201'><span class='title'>BCI Rentals - Custom CMS</span><span class='more'>view more</span><span class='image-holder'><img src='images/bci.jpg' /></span></a><a href='http://sc.chinaz.com/?p=82'><span class='title'>Schoolwires Creative Services</span><span class='more'>view more</span><span class='image-holder'><img src='images/creative.jpg' /></span></a><a href='http://sc.chinaz.com/?p=4'><span class='title'>Self-Service</span><span class='more'>view more</span><span class='image-holder'><img src='images/selfservice11.jpg' /></span></a><a href='http://sc.chinaz.com/?p=176'><span class='title'>Portfolio: "Infinite Scolling" Wall</span><span class='more'>view more</span><span class='image-holder'><img src='images/portfolio1.jpg' /></span></a><a href='http://sc.chinaz.com/?p=191'><span class='title'>Mother's Ring Builder</span><span class='more'>view more</span><span class='image-holder'><img src='images/mothers.jpg' /></span></a>					<pre>-ms-filter: &quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=50)&quot;;    /* IE 5-7 */   filter: alpha(opacity=50);</pre>
+						</div>
+					</div>
+				</div>
+				<div class="nav-arrow back"></div>
+				<div class="nav-arrow next"></div>
+			</div>
+    </div>   
+</div>             
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

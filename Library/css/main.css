@@ -1,0 +1,201 @@
+
+body {
+	background-color: #eee;
+	font-family:Microsoft YaHei;
+	font-size:14px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #999999;
+}
+
+/*Ê×Ò³ÂÖ²¥Í¼*/
+.jumbotron {
+	padding-top : 48px;
+	padding-bottom : 0px;
+	margin-bottom : 0px;
+}
+.jumbotron > .container > .row > .col-md-2 {
+	padding-left : 0px;
+	width : 20.7%;
+}	
+.span4 >ol {
+	padding-left : 0px;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  height: 264px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  
+}
+.carousel-caption > h1 {
+	font-family:Microsoft YaHei;
+   font-size:14px;
+}
+.carousel-caption > p {
+	font-family:Microsoft YaHei;
+   font-size:12px;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 264px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 264px;
+}
+/*ÄÚÈÝÒ³*/
+.thumbnail {
+	padding:0;
+	border:0;
+	margin-bottom: 0;
+}
+
+#home > .row > .col-md-3{
+	padding-left: 13px;
+    padding-right: 13px;
+}
+
+.contents {
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #dbdbdb;
+    border-image: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+    background: none repeat scroll 0 0 #fff;
+}
+
+.contents-title {
+	color:#337FE5;
+	font-family:SimHei;
+	font-size:14px;
+	padding:6px 7px 0px 7px;
+	margin: 0;
+}
+
+.contents-describe {
+	color:#999999;
+	font-family:SimHei;
+	font-size:12px;
+	padding:6px 7px;
+}
+.img-circle {
+	height: 45px;
+	width: 45px;
+	vertical-align: baseline;
+}
+/*ËÑË÷Ò³*/
+.contents-search {
+	background: none repeat scroll 0 0 #fff;
+	margin-left: 0;
+	margin-right:0;
+	border-bottom: 1px solid #ddd;
+}
+.contents-search:hover{
+	border-bottom: 1px solid #4cae4c;
+}
+/*Ð¡ËµÏêÏ¸*/
+.table-bordered {
+	border : none;
+	width: 80%;
+}
+.table-bordered > tbody > tr > th, .table-bordered > tbody > tr > td{
+	text-align: center;
+	border: none;
+	padding: 5px;
+	font-weight:100;
+}
+.table-bordered > tbody > tr > th {
+	color:#999999;
+}
+.table-bordered > tbody > tr > td{
+	text-align: left;
+}
+/*Ð¡ËµÊ×Ò³*/
+.xiaoshuo-news {
+	background: none repeat scroll 0 0 #fff;
+	padding : 10px 20px 20px 15px;
+	margin-bottom: 20px;
+}
+.xiaoshuo-news > li{
+    list-style:none;
+    padding:3px;
+}
+.xiaoshuo-news > li > span > a {
+	color :#999999;
+}
+.xiaoshuo-carousel-indicators {
+ 	bottom: 10px;
+    left: 50%;
+    margin-left: -30%;
+    padding-left: 0;
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    z-index: 15;
+}
+.xiaoshuo-carousel-indicators > li{
+	padding:10px;
+}
+
+.xiaoshuo-gengxin {
+	padding:0 15px;
+	margin-bottom: 0px;
+}
+.xiaoshuo-gengxin> .row{
+	margin:0 1px;
+	padding : 10px 0;
+	border-bottom: 1px solid #edf0f2;
+}
+.xiaoshuo-gengxin> .row:hover {
+	border-bottom: 1px solid #4cae4c;
+}
+.num-top {
+    background: none repeat scroll 0 0 #f23d7c;
+    border: 1px solid #dd2464;
+    color: #fff;
+    display: inline;
+    font-size: 12px;
+    line-height: 10px;
+    text-align: center;
+}
+
+/*ÓÎÏ·ÏêÏ¸Ò³*/
+.youxi-new-title {
+	margin: 5px -20px 147px 0;
+}
+.youxi-new-title > li{
+	margin: 2px 25px 2px 15px;
+    width: 400px;
+    float : left;
+    list-style:none;
+}
+.youxi-new-title > li > span > a {
+	color :#999999;
+}
+.youxi-news-date {
+	color :#999999;
+	float : right;
+	font-size : 12px;
+	padding-top : 4px;
+}
+.col-md-3 {
+	min-height: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+}

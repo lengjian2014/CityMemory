@@ -88,7 +88,6 @@ class GoodsCategory extends CActiveRecord
 	public function search($info)
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
-		var_dump($info);exit;
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('cat_id',$this->cat_id);
